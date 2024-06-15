@@ -20,45 +20,43 @@ import Lin from '../assets/Lin.png'
 import Twtr from '../assets/Twtr.png'
 import Yt from '../assets/Yt.png'
 import ImgMob2 from "../assets/ImgMob2.png"
+import { ArrowRightEndOnRectangleIcon } from "@heroicons/react/24/outline";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 const Home = () => {
   return (
-    <div>
+    <div className="h-screen w-screen">
       <Navbar />
-      <div className="bg-black text-white pt-28 pl-10 font-barlow pb-28 ">
-        <img src={ImgMob2}/>
-        <div className="m-4 font-barlow ">WELCOME TO ELITE GROUP HOLDINGS</div>
+      <div
+      className="bg-black text-white pt-28 pl-10 font-barlow pb-28"
+      style={{
+        backgroundImage: `url(${ImgMob1})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div>
+        <div className="m-4 font-barlow">WELCOME TO ELITE GROUP HOLDINGS</div>
         <div className="m-4 text-5xl font-bold">
           DRIVING EXCELLENCE <br />
           BUILDING FEATURES
         </div>
-        <button className="m-4 p-1 border-white border rounded-full px-10 ">
+        <button className="m-4 p-1 border-white border rounded-full px-10">
           EXPLORE
         </button>
+
         <div className="flex gap-28 mx-4 mt-40">
-          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">
-            Our Company
-          </div>
-          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">
-            Automotive
-          </div>
-          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">
-            Investments
-          </div>
-          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">
-            Real-Estate
-          </div>
-          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">
-            Healthcare
-          </div>
-          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">
-            Education
-          </div>
-          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">
-            Ecommerce
-          </div>
+          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">Our Company</div>
+          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">Automotive</div>
+          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">Investments</div>
+          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">Real-Estate</div>
+          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">Healthcare</div>
+          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">Education</div>
+          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">Ecommerce</div>
         </div>
       </div>
+    </div>
+
       <div className="font-barlow flex flex-col bg-white">
         <div className="flex">
           <div>
@@ -83,6 +81,11 @@ const Home = () => {
               communities we serve and continuously seeking new avenues for
               fostering growth
             </div>
+            <div className="bg-black  px-6 mt-6 rounded-full text-white flex mr-96"> 
+              <button className="m-2 p-1 border-black border rounded-full px-10 flex text-center items-center  ">
+              <div className="text-nowrap">READ MORE </div>
+                <div><ArrowRightIcon className="w-6 h-6"/></div>
+                  </button></div>
           </div>
         </div>
         <div className="mx-10">
@@ -279,8 +282,8 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <div className="flex">
           <div className="bg-woodsmoke-500">
-            <footer className="bg-woodsmoke-500">
               <div className="relative inline-block">
                 <img
                   src={Footer}
@@ -370,7 +373,10 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-woodsmoke-500 p-5 pb-36 h-screen  ">
+                  </div>
+                
+                </div>
+                <div className="bg-woodsmoke-500 p-5 pb-36 h-screen  ">
                     <div className="justify-center items-center flex">
                       <img src={Logo} alt="Logo" />
                     </div>
@@ -390,6 +396,7 @@ const Home = () => {
                           interventions <br />
                           wherever appropriate.
                         </div>
+                      
                       </div>
                       <div className="text-masala-300">
                         <div>NAVIGATION</div>
@@ -455,9 +462,7 @@ const Home = () => {
 
                     </div>
                   </div>
-                </div>
               </div>
-            </footer>
 
           </div>
         </div>

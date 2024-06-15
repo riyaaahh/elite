@@ -32,7 +32,7 @@ import Instagram from "../assets/Instagram.png";
 import { Bars4Icon } from "@heroicons/react/24/solid";
 const HomeMob = () => {
   return (
-    <div className="">
+    <div className=" h-screen w-screen">
       <div className="bg-woodsmoke-500   font-barlow ">
         <div className="mx-6">
           <div className="flex items-center  justify-between  ">
