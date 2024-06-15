@@ -4,6 +4,7 @@ import AboutImg from "./../assets/AboutImg.png";
 import Img1 from "../assets/Img1.png";
 import Img2 from "../assets/Img2.png";
 import Img3 from "../assets/Img3.png";
+import ImgMob1 from '../assets/ImgMob1.png'
 import Lamborghini from "../assets/Lamborghini.png";
 import Footer from "../assets/Footer.png";
 import Logo from "./../assets/Logo.png";
@@ -18,13 +19,14 @@ import IG from '../assets/IG.png'
 import Lin from '../assets/Lin.png'
 import Twtr from '../assets/Twtr.png'
 import Yt from '../assets/Yt.png'
-
+import ImgMob2 from "../assets/ImgMob2.png"
 
 const Home = () => {
   return (
     <div>
       <Navbar />
       <div className="bg-black text-white pt-28 pl-10 font-barlow pb-28 ">
+        <img src={ImgMob2}/>
         <div className="m-4 font-barlow ">WELCOME TO ELITE GROUP HOLDINGS</div>
         <div className="m-4 text-5xl font-bold">
           DRIVING EXCELLENCE <br />
@@ -57,7 +59,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="font-barlow flex flex-col bg-blackhaze-500">
+      <div className="font-barlow flex flex-col bg-white">
         <div className="flex">
           <div>
             <div className=" ">
@@ -65,7 +67,7 @@ const Home = () => {
             </div>{" "}
             <div className="p-4"></div>
           </div>
-          <div className=" mt-20">
+          <div className="  ml-4 mt-20">
             {" "}
             <div className="font-extrabold  text-4xl mb-2">ABOUT US</div>
             <div>
@@ -110,9 +112,10 @@ const Home = () => {
         </div>
         <div>
           {" "}
-          <img src={AboutImg} className="w-full mt-4" />
+          <img src={ImgMob1} className="w-full mt-4 " />
         </div>
         <div className="bg-blackhaze-500">
+          <div className="ml-14">
           <div className="flex  items-center mt-3">
             <div className="font-bold text-5xl ml-4"> HIGHLIGHTS</div>
             <div className="ml-32">
@@ -187,8 +190,9 @@ const Home = () => {
               <div className="p-2 py-14 ml-4 border-r border-r-black"> </div>
             </div>
           </div>
+          </div>
           <div>
-            <div className="font-bold text-5xl ml-4 my-10">
+            <div className="font-bold text-5xl ml-14 my-10">
               EXPLORE OUR PARTNERS
             </div>
             <div>
@@ -275,8 +279,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div>
-            <footer>
+          <div className="bg-woodsmoke-500">
+            <footer className="bg-woodsmoke-500">
               <div className="relative inline-block">
                 <img
                   src={Footer}
@@ -366,7 +370,7 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-woodsmoke-500 p-5  ">
+                  <div className="bg-woodsmoke-500 p-5 pb-36 h-screen  ">
                     <div className="justify-center items-center flex">
                       <img src={Logo} alt="Logo" />
                     </div>
@@ -439,7 +443,7 @@ const Home = () => {
         </div>
       </form>
       </div>
-      <div className="flex mt-2 gap-5">
+      <div className="flex mt-4 ml-2 gap-5">
         <div><img src={FB}/></div>
         <div><img src={Lin}/></div>
         <div><img src={IG}/></div>
@@ -454,6 +458,7 @@ const Home = () => {
                 </div>
               </div>
             </footer>
+
           </div>
         </div>
       </div>
