@@ -13,17 +13,36 @@ import Logo4 from "../assets/Logo4.png";
 import Logo5 from "../assets/Logo5.png";
 import Logo6 from "../assets/Logo6.png";
 import Logo7 from "../assets/Logo7.png";
-import FB from '../assets/FB.png'
-import IG from '../assets/IG.png'
-import Lin from '../assets/Lin.png'
-import Twtr from '../assets/Twtr.png'
-import Yt from '../assets/Yt.png'
-
-
-const Home = () => {
+import ArrowLeft from '../assets/ArrowLeft.png'
+import ArrowRight from '../assets/ArrowRight.png'
+import FB from "../assets/FB.png";
+import IG from "../assets/IG.png";
+import ImgMob1 from "../assets/ImgMob1.png";
+import Lin from "../assets/Lin.png";
+import Twtr from "../assets/Twtr.png";
+import Yt from "../assets/Yt.png";
+import Facebook from "../assets/Facebook.png";
+import Twitter from "../assets/Twitter.png";
+import Linkedin from "../assets/Linkedin.png";
+import Youtube from "../assets/Youtube.png";
+import Instagram from "../assets/Instagram.png";
+import { Bars4Icon } from "@heroicons/react/24/solid";
+const HomeMob = () => {
   return (
-    <div>
-      <Navbar />
+    <div className="">
+      <div className="bg-woodsmoke-500   font-barlow ">
+        <div className="mx-6">
+          <div className="flex items-center  justify-between  ">
+            <div>
+              <img src={Logo} />
+            </div>
+
+            <div>
+              <Bars4Icon className="w-8 h-8 text-white" />
+            </div>
+          </div>
+        </div>
+      </div>{" "}
       <div className="bg-black text-white pt-28 pl-10 font-barlow pb-28 ">
         <div className="m-4 font-barlow ">WELCOME TO ELITE GROUP HOLDINGS</div>
         <div className="m-4 text-5xl font-bold">
@@ -33,84 +52,86 @@ const Home = () => {
         <button className="m-4 p-1 border-white border rounded-full px-10 ">
           EXPLORE
         </button>
-        <div className="flex gap-28 mx-4 mt-40">
-          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">
+        <div className="flex  mt-40 mr-10">
+          <div className="border border-x-0 border-t-0 pb-3 text-3xl text-silver-500 w-full">
             Our Company
-          </div>
-          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">
-            Automotive
-          </div>
-          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">
-            Investments
-          </div>
-          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">
-            Real-Estate
-          </div>
-          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">
-            Healthcare
-          </div>
-          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">
-            Education
-          </div>
-          <div className="border border-x-0 border-t-0 pb-3 text-silver-500">
-            Ecommerce
           </div>
         </div>
       </div>
       <div className="font-barlow flex flex-col bg-blackhaze-500">
-        <div className="flex">
-          <div>
-            <div className=" ">
-              <img src={AboutImg} style={{ width: "1750px", height: "auto" }} />
-            </div>{" "}
-            <div className="p-4"></div>
-          </div>
-          <div className=" mt-20">
-            {" "}
-            <div className="font-extrabold  text-4xl mb-2">ABOUT US</div>
+        <div className=" m-4">
+          <div className="font-extrabold  text-4xl mb-6">ABOUT US</div>
+          <div className="mb-1">
+            <div className="mb-6">
+              Elite Group Holding Ltd, is more than just a group holding
+              company. We are visionaries, innovators and creators of tomorrow’s
+              possibilities.
+            </div>
             <div>
-              {" "}
-              <div className="mb-1">
-                Elite Group Holding Ltd, is more than just a group holding
-                company. We are visionaries, innovators and creators of
-                tomorrow’s possibilities.
-              </div>
-              <br />
               We believe in the power of purpose-driven business. Our commitment
               revolves around enhancing the quality of life within the
               communities we serve and continuously seeking new avenues for
               fostering growth
             </div>
           </div>
+          <div>
+            <div className=" mt-4 ">
+              <img src={AboutImg} style={{ width: "1750px", height: "auto" }} />
+            </div>{" "}
+            <div className="p-4"></div>
+          </div>
         </div>
-        <div className="mx-10">
-          <div className="font-extrabold text-5xl mb-6">
+
+        <div className="m-6">
+          <div className="font-extrabold text-4xl mb-6">
             EXPLORE OUR GROUP COMPANIES
           </div>
-          <div className="gap-3 flex">
-            <button className="bg-white text-black p-1 px-12 border border-black rounded-full">
-              AUTOMOTIVE
-            </button>
-            <button className="bg-white text-black p-1 px-12 border border-black rounded-full">
-              INVESTMENTS
-            </button>
-            <button className="bg-white text-black p-1 px-12 border border-black rounded-full">
-              REAL ESTATE
-            </button>
-            <button className="bg-white text-black p-1 px-12 border border-black rounded-full">
-              HEALTHCARE
-            </button>
-            <button className="bg-white text-black p-1 px-12 border border-black rounded-full">
-              EDUCATION
-            </button>
-            <button className="bg-white text-black p-1 px-12 border border-black rounded-full">
+          <div className=" gap-3">
+            <div className="flex gap-2 mb-3">
+              <div className="bg-white text-black p-1 px-8 border  text-sm border-black rounded-full">
+                AUTOMOTIVE
+              </div>
+              <div className="bg-white text-black p-1 px-8 border text-sm border-black rounded-full">
+                INVESTMENTS
+              </div>
+            </div>
+            <div className="flex gap-2 mb-3">
+              <div className="bg-white text-black p-1 px-8 border text-sm text-nowrap border-black rounded-full">
+                REAL ESTATE
+              </div>
+
+              <div className="bg-white text-black p-1 px-10 border text-sm border-black rounded-full">
+                EDUCATION
+              </div>
+            </div>
+            <div className="bg-white text-black p-1 px-8 mr-44 border text-sm border-black rounded-full">
               E-COMMERCE
-            </button>
+            </div>
           </div>
         </div>
-        <div>
-          {" "}
-          <img src={AboutImg} className="w-full mt-4" />
+        <div className="relative inline-block">
+          <img src={ImgMob1} className="w-full mt-4" />
+          <div className="absolute top-0 left-0 w-full h-full text-white  justify-center  my-36 items-center mb-24">
+            <div className="absolute ml-14">
+              <div className="text-xl text-center mb-3">
+                Lamborghini Abu Dhabi and Dubai
+              </div>
+              <div>
+                <div className="mb-1">
+                Ultimate Motors upholds its dedication to
+                </div>
+                <div className="mb-1"> delivering unrivaled excellence in </div>
+                <div className="mb-1">
+                customer experience and top-tier </div>
+                automotive services.
+              </div>
+              
+            </div>
+            <div className="flex justify-between mt-56 mx-4">
+                <div><img className="border border-white p-1 px-2" src={ArrowLeft}/></div>
+                <div><img className="border border-white p-1 px-2" src={ArrowRight}/></div>
+              </div>
+          </div>
         </div>
         <div className="bg-blackhaze-500">
           <div className="flex  items-center mt-3">
@@ -399,56 +420,62 @@ const Home = () => {
                       </div>
                       <div className="text-masala-300">
                         <div>Group of Companies</div>
-                        <div className="mt-3">
-                          Automotive   
-                       
-                        </div>
+                        <div className="mt-3">Automotive</div>
 
                         <div>Investments</div>
                         <div>Group Companies</div>
                         <div>Real Estate </div>
                         <div> Healthcare</div>
-                        <div>  Education Ecommerce</div>
+                        <div> Education Ecommerce</div>
                       </div>
                       <div className="text-masala-300">
                         <div>SUBSCRIBE</div>
                         <div className="mt-3">
-                        Subscribe to our Newsletter to be up to date <br/> with the latest automotive news and our <br/> amazing deals  
-                       
+                          Subscribe to our Newsletter to be up to date <br />{" "}
+                          with the latest automotive news and our <br /> amazing
+                          deals
                         </div>
 
-                       <div>
-                         <form className="">
-        <div className="mb-4 mt-2">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            className="shadow appearance-none  rounded-full w-full py-1 bg-chicago-500 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
-            placeholder=" Your email Address"
-            required
-          />
-        </div>
-        <div className="flex items-center justify-between">
-          <button
-            type="submit"
-            className="border border-white w-full text-white  py-1 px-4 rounded-full focus:outline-none focus:shadow-outline"
-          >
-            SUBMIT
-          </button>
-        </div>
-      </form>
-      </div>
-      <div className="flex mt-2 gap-5">
-        <div><img src={FB}/></div>
-        <div><img src={Lin}/></div>
-        <div><img src={IG}/></div>
-        <div><img src={Yt}/></div>
-        <div><img src={Twtr}/></div>
-      </div>
+                        <div>
+                          <form className="">
+                            <div className="mb-4 mt-2">
+                              <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                className="shadow appearance-none  rounded-full w-full py-1 bg-chicago-500 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                                placeholder=" Your email Address"
+                                required
+                              />
+                            </div>
+                            <div className="flex items-center justify-between">
+                              <button
+                                type="submit"
+                                className="border border-white w-full text-white  py-1 px-4 rounded-full focus:outline-none focus:shadow-outline"
+                              >
+                                SUBMIT
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                        <div className="flex mt-2 gap-5">
+                          <div>
+                            <img src={FB} />
+                          </div>
+                          <div>
+                            <img src={Lin} />
+                          </div>
+                          <div>
+                            <img src={IG} />
+                          </div>
+                          <div>
+                            <img src={Yt} />
+                          </div>
+                          <div>
+                            <img src={Twtr} />
+                          </div>
+                        </div>
                       </div>
-                      
-
                     </div>
                   </div>
                 </div>
@@ -461,4 +488,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeMob;
