@@ -1,29 +1,30 @@
 import React from 'react';
-import Facebook from '../assets/Facebook.png'
-import Twitter from '../assets/Twitter.png'
-import Linkedin from '../assets/Linkedin.png'
-import Youtube from '../assets/Youtube.png'
-import Instagram from '../assets/Instagram.png'
+import FB from '../assets/FB.png'
+import IG from '../assets/IG.png'
+import Lin from '../assets/Lin.png'
+import Twtr from '../assets/Twtr.png'
+import Yt from '../assets/Yt.png'
 import Logo from '../assets/Logo.png'
 import { Bars4Icon } from '@heroicons/react/24/solid';
 
 
 const Navbar = () => {
   return (
-    <div className='bg-woodsmoke-500 p-4 px-20 font-barlow '>
+    <div className='bg-woodsmoke-500 p-2 px-4 font-barlow '>
         <div className='flex justify-between items-center'>
-            <div className='flex gap-6'>
-                <div><img src={Facebook}/></div>
-                <div><img src={Twitter}/></div>
-                <div><img src={Linkedin}/></div>
-                <div><img src={Youtube}/></div>
-                <div><img src={Instagram}/></div>
+        <div className='flex gap-6  hidden md:flex'>
+    <div><img src={FB} alt="Facebook" /></div>
+    <div><img src={Twtr} alt="Twitter" /></div>
+    <div><img src={Lin} alt="LinkedIn" /></div>
+    <div><img src={Yt} alt="Youtube" /></div>
+    <div><img src={IG} alt="Instagram" /></div>
+</div>
 
-            </div>
-            <div><img src={Logo}/></div>
-            <div className='flex gap-8'>
-                <div className='text-white text-lg'>OUR GROUP</div>
-                <div className='text-white text-lg'>CONTACT</div>
+
+
+            <div><img src={Logo} className=' mr-0 md:mr-8'/></div>
+            <div className='flex gap-8  '>
+                <div className='text-white text-lg hidden md:flex'>CONTACT</div>
                 <div><Bars4Icon className='w-8 h-8 text-white'/></div>
 
             </div>

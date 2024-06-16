@@ -373,7 +373,6 @@ const HomeMob = () => {
   <div><span className="text-white font-bold text-nowrap text-xs">Disclaimer:</span> The Elite Cars is not endorsed by, directly affiliated with, maintained or sponsored by any car manufacturer.</div>
 </div>
                   </div>
-                  <div className="w-full border-t border-white"></div>
 
           </div>
 
