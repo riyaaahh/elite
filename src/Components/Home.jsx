@@ -33,50 +33,102 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Img6 from "../assets/Img6.png"
 import Img8 from "../assets/Img8.png"
 import ArrowLeft from "../assets/ArrowLeft.png"
-import ArrowRight from "../assets/ArrowLeft.png"
+import ArrowRight from "../assets/ArrowRight.png"
+import HomeVideo1 from "./../assets/HomeVideo1.mp4"
 const Home = () => {
   return (
-    <div className="h-screen w-screen">
-      <Navbar />
-      <div
-      className="bg-black text-white pt-28 pl-10 font-barlow pb-28"
-      style={{
-        backgroundImage: `url(${Img8})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
-      <div>
-        <div className="m-4 font-barlow">WELCOME TO ELITE GROUP HOLDINGS</div>
-        <div className="m-4 md:text-5xl sm-text-4xl text-3xl font-bold">
-          DRIVING EXCELLENCE <br />
-          BUILDING FEATURES
-        </div>
-        <button className="m-4 p-1 border-white border rounded-full px-10">
-          EXPLORE
-        </button>
+    <div className="h-screen w-screen ">
+    <div className="relative bg-black w-screen text-white font-barlow">
+  <video
+    autoPlay
+    loop
+    muted
+    className="absolute inset-0 w-screen h-full object-cover"
+  >
+    <source src={HomeVideo1} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 
-        <div className="flex gap-28 mx-4 mt-40">
-          <div className="border border-x-0 border-t-0 pb-3 text-white border-white">Our Company</div>
-          <div className="border border-x-0 border-t-0 pb-3 text-white border-white hidden md:flex">Automotive</div>
-          <div className="border border-x-0 border-t-0 pb-3 text-white border-white hidden md:flex">Investments</div>
-          <div className="border border-x-0 border-t-0 pb-3 text-white border-white hidden md:flex">Real-Estate</div>
-          <div className="border border-x-0 border-t-0 pb-3 text-white border-white hidden md:flex">Healthcare</div>
-          <div className="border border-x-0 border-t-0 pb-3 text-white border-white hidden md:flex">Education</div>
-          <div className="border border-x-0 border-t-0 pb-3 text-white border-white hidden md:flex">Ecommerce</div>
-        </div>
+  <div className="relative z-10">
+    <Navbar />
+    <div className=" px-8 py-28">
+      <div className=" lg:text-2xl sm:text-base font-barlow">WELCOME TO ELITE GROUP HOLDINGS</div>
+      <div className=" lg:text-6xl sm:text-3xl  font-barlow text-3xl font-bold my-4">
+        DRIVING EXCELLENCE <br />
+        BUILDING FEATURES
       </div>
-    </div>
+      <button className="my-4 flex py-2 border-white border rounded-full items-center px-10">
+        <div className="text-base">Explore</div>
+      <div className="hidden md:flex"><ArrowRightIcon className="w-8 h-8"/></div>
 
-      <div className="font-barlow flex flex-col  bg-white">
-      <div className="flex flex-col-reverse lg:flex-row mx-6 lg:mx-0  lg:my-0">
-      <div className=" lg:w-1/2 mr-5 lg:mr-0 mt-4 lg:mt-0">
-      <img src={AboutImg} className="w-full h-auto" />
-    <div className="p-4"></div>
+      </button>
+
+      <div className="flex gap-8 mt-40 w-full">
+      <div >
+      <div className=" pb-1 text-white ">
+          <div>Our Company</div>
+          <div className="border-b border-x-woodsmoke-400 p-1 px-20 "></div>
+
+          </div>
+          </div>
+          <div className="flex hidden md:flex">
+        <div className=" pb-1 text-white ">
+          <div>Automotive</div>
+          <div className="border-b border-white p-1 px-20 "></div>
+
+          </div>
+          </div>   
+          <div className="flex hidden md:flex">
+        <div className=" pb-1 text-white ">
+          <div>Investments</div>
+          <div className="border-b border-white p-1 px-20 "></div>
+
+          </div>
+          </div>          
+          <div className="flex hidden md:flex">
+        <div className=" pb-1 text-white ">
+          <div>Real-Estate</div>
+          <div className="border-b border-white p-1 px-20 "></div>
+
+          </div>
+          </div>       
+          <div className="flex hidden md:flex">
+        <div className=" pb-1 text-white ">
+          <div>Healthcare</div>
+          <div className="border-b border-white p-1 px-20 "></div>
+
+          </div>
+          </div>      
+              <div className=" flex hidden md:flex">
+        <div className=" pb-1 text-white ">
+          <div>Education</div>
+          <div className="border-b border-white p-1 px-20 "></div>
+
+          </div>
+          </div>       
+          <div className=" flex hidden md:flex">
+        <div className=" pb-1 text-white ">
+          <div>Ecommerce</div>
+          <div className="border-b border-white p-1 px-20 "></div>
+
+          </div>
+          </div>     
+           </div>
+    </div>
   </div>
-  <div className="lg:w-1/2 ml-4 mt-4 lg:mt-6 lg:ml-6">
-    <div className="font-extrabold md:text-5xl sm-text-4xl text-3xl mb-2">ABOUT US</div>
-    <div>
+
+  <div className="absolute inset-0 bg-black opacity-50"></div>
+</div>
+
+      <div className="font-barlow flex flex-col  bg-blackhaze-500">
+      <div className="flex flex-col-reverse lg:flex-row mx-6 lg:mx-0  lg:my-0">
+      <div className=" lg:w-2/4 mr-5 lg:mr-0 mt-4 lg:mt-0">
+      <img src={AboutImg} className="" />
+  </div>
+  <div className="lg:w-1/2 ml-4 mt-4 lg:mt-6 lg:ml-6 ">
+  <div className="mt-16">
+  <div className="font-extrabold text-3xl lg:text-5xl mb-2">ABOUT US</div>
+  <div>
       <div className="mb-1">
         Elite Group Holding Ltd, is more than just a group holding
         company. We are visionaries, innovators and creators of
@@ -88,44 +140,46 @@ const Home = () => {
       communities we serve and continuously seeking new avenues for
       fostering growth.
     </div>
-    <div className="bg-black px-6 mt-6 rounded-full text-white flex hidden md:flex">
-      <button className="m-2 p-1 border-black border rounded-full px-10 flex text-center items-center">
-        <div className="text-nowrap">READ MORE </div>
-        <div><ArrowRightIcon className="w-6 h-6" /></div>
-      </button>
-    </div>
+    
   </div>
+  <button className="my-4 p-3 p-4 py-3 py-4 hidden md:flex flex bg-black border text-white rounded-full items-center px-16">
+        <div className="text-lg">Read More</div>
+      <div className="hidden md:flex mt-1"><ArrowRightIcon className=" w-6 h-6" /></div>
+
+      </button>
+  </div>
+ 
 </div>
 
-         <div className="m-8  md:hidden">
+         <div className="ml-4  md:hidden">
           <div className="font-extrabold text-4xl mb-6">
             EXPLORE OUR GROUP COMPANIES
           </div>
-          <div className=" gap-3">
+          <div className="  ">
             <div className="flex gap-2 mb-3">
-              <div className="bg-white text-black p-1 px-8 border  text-sm border-black rounded-full">
+              <div className="text-black p-1 px-8 border  text-sm border-black rounded-full">
                 AUTOMOTIVE
               </div>
-              <div className="bg-white text-black p-1 px-8 border text-sm border-black rounded-full">
+              <div className=" text-black p-1 px-8 border text-sm border-black rounded-full">
                 INVESTMENTS
+              </div>
+              <div className=" text-black p-1 px-8 border text-sm text-nowrap border-black rounded-full">
+                REAL ESTATE
               </div>
             </div>
             <div className="flex gap-2 mb-3">
-              <div className="bg-white text-black p-1 px-8 border text-sm text-nowrap border-black rounded-full">
-                REAL ESTATE
-              </div>
+             
 
-              <div className="bg-white text-black p-1 px-10 border text-sm border-black rounded-full">
+              
+            </div>
+            <div className="flex gap-2 mb-3">
+            <div className=" text-black p-1 px-10 border text-sm border-black rounded-full">
                 EDUCATION
               </div>
-            </div>
-            <div className="flex">
-            <div className="bg-white text-black  border p-1  px-8 text-sm border-black rounded-full">
+            <div className=" text-black  border p-1  px-8 text-sm border-black rounded-full">
               E-COMMERCE
             </div>
-            <div className="bg-white p-1 px-10 text-sm  rounded-full">
-                
-              </div>
+           
               </div>
           </div>
         </div>
@@ -157,12 +211,54 @@ const Home = () => {
           <div className="font-extrabold text-5xl mb-6 ml-10 mt-10">
             EXPLORE OUR SECTORS
           </div>
-         <div><img src={Img5}/></div>
+          <div className="relative h-screen">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${Img5})` }}
+      ></div>
+
+      <div className="relative z-10 h-full flex flex-col justify-end">
+        <div className="flex  w-full h-full justify-between">
+         
+        <div className="flex hidden md:flex  border-r border-white">
+            <div className="pb-1 text-white items-end mt-56">
+              <div className=" mt-80 text-xl text-center mr-8 px-4">INVESTMENTS</div>
+            </div>
+          </div>
+          <div className="flex hidden md:flex  border-r border-white">
+            <div className="pb-1 text-white items-end mt-56">
+              <div className=" mt-80 text-xl text-center mr-8 px-4 ">INVESTMENTS</div>
+            </div>
+          </div>
+          <div className="flex hidden md:flex  border-r border-white">
+            <div className="pb-1 text-white  mt-56">
+              <div className=" mt-80 text-xl text-center mr-8 px-4">REAL ESTATE</div>
+            </div>
+          </div>
+          <div className="flex hidden md:flex  border-r border-white">
+            <div className="pb-1 text-white mt-56">
+              <div className=" mt-80 text-xl text-center mr-8 px-4">HEALTHCARE</div>
+            </div>
+          </div>
+          <div className="flex hidden md:flex  border-r border-white">
+            <div className="pb-1 text-white mt-56">
+              <div className=" mt-80 text-xl text-center mr-8 px-4">EDUCATION</div>
+            </div>
+          </div>
+          <div className="flex hidden md:flex border-r border-white">
+            <div className="pb-1 text-white mt-56">
+              <div className=" mt-80 text-xl text-center mr-8 px-4">ECOMMERCE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
         </div>
        
         <div className="bg-blackhaze-500">
           <div className=" m-12 lg:m-8 mr-16 lg:mr-0">
-          <div className=" flex flex-col md:flex-row   lg:blo items-center jut mt-3 justify-between">
+            <div className="mr-2">
+          <div className=" flex flex-col md:flex-row    items-center jut mt-3 justify-between">
             <div className="font-bold text-5xl ml-0 lg:ml-8 text-start"> HIGHLIGHTS</div>
             <div className="ml-4 lg:ml-2 flex  hidden text-nowrap">
               We are pragmatic in our approach to design  and
@@ -176,7 +272,7 @@ const Home = () => {
               and to supplement these with contemporary interventions s
               wherever appropriate.
             </div>
-            <div className="ml-4 lg:ml-2 flex  ">
+            <div className="ml-4 lg:ml-2 flex mt-12  ">
               We are pragmatic in our approach to design and 
               handle<br/> each project in accordance with its particular
               <br />
@@ -201,6 +297,66 @@ const Home = () => {
               present and future value.
             </div>
           </div>
+          <div className="flex  m-4 text-center items-center justify-between flex hidden md:flex ">
+          <div className="items-center text-center flex py-10">
+              <div className="p-2 py-14  border-l border-l-black"> </div>
+              <div>
+                <div>
+                  <div className=" text-5xl">30+</div>
+                  <div className="">Years of experience</div>
+                </div>
+                <div>
+                  <div className="p-2 px-32 mt-8 border-b border-b-black">
+                    {" "}
+                  </div>
+                </div>
+              </div>
+              <div className="p-2 py-14 border-r border-r-black"> </div>
+            </div>
+            <div className="items-center text-center flex py-10">
+              <div>
+                <div>
+                <div className=" text-5xl">5000+</div>
+                <div className="">Employees</div>
+                </div>
+                <div>
+                  <div className="p-2 px-32 mt-8 border-b border-b-black">
+                    {" "}
+                  </div>
+                </div>
+              </div>
+              <div className="p-2 py-14 border-r border-r-black"> </div>
+            </div>
+            <div className="items-center text-center flex py-10">
+              <div>
+                <div>
+                  <div className=" text-5xl">40+</div>
+                  <div className="">Nationalities</div>
+                </div>
+                <div>
+                  <div className="p-2 px-32 mt-8 border-b border-b-black">
+                    {" "}
+                  </div>
+                </div>
+              </div>
+              <div className="p-2 py-14 border-r border-r-black"> </div>
+            </div>
+            <div className="items-center text-center flex py-10">
+              <div>
+                <div>
+                  <div className=" text-5xl">20+</div>
+                  <div className="">Offices / Showrooms</div>
+                </div>
+                <div>
+                  <div className="p-2 px-32 mt-8 border-b border-b-black">
+                    {" "}
+                  </div>
+                </div>
+              </div>
+              <div className="p-2 py-14 border-r border-r-black"> </div>
+            </div>
+          </div>
+          </div>
           <div className="  text-center items-center justify-center ml-4 mr-4 mt-4 md:hidden ">
            <div className="  gap-2 flex justify-between">
             <div className="bg-black  text-white   text-center justify-center items-center w-full  p-8 py-10 ">
@@ -224,53 +380,7 @@ const Home = () => {
            </div>
            
           </div>
-          <div className="flex  m-4 text-center items-center justify-between flex hidden md:flex ">
-            <div className="items-center text-center flex py-10">
-              <div className="p-2 py-14 mr-4 border-l border-l-black"> </div>
-              <div>
-                <div>
-                  <div className=" text-5xl">30+</div>
-                  <div className="">Years of experience</div>
-                </div>
-                <div>
-                  <div className="p-2 px-32 mt-8 border-b border-b-black">
-                    {" "}
-                  </div>
-                </div>
-              </div>
-              <div className="p-2 py-14 ml-4 border-r border-r-black"> </div>
-            </div>
-            <div className="items-center flex text-center">
-              <div className="ml-8">
-                <div>
-                  <div className=" text-5xl">5000+</div>
-                  <div className="">Employers</div>
-                </div>
-                <div className="p-2 px-32 mt-8 border-b border-b-black"> </div>
-              </div>
-              <div className="p-2 py-14 ml-4 border-r border-r-black"> </div>
-            </div>
-            <div className="items-center flex text-center">
-              <div className="ml-8">
-                <div>
-                  <div className=" text-5xl">40+</div>
-                  <div className="">Nationalities</div>
-                </div>
-                <div className="p-2 px-32 mt-8 border-b border-b-black"> </div>
-              </div>
-              <div className="p-2 py-14 ml-4 border-r border-r-black"> </div>
-            </div>
-            <div className="items-center flex text-center">
-              <div className="ml-8">
-                <div>
-                  <div className=" text-5xl">20+</div>
-                  <div className="">Offices / Showrooms</div>
-                </div>
-                <div className="p-2 px-32 mt-8 border-b border-b-black"> </div>
-              </div>
-              <div className="p-2 py-14 ml-4 border-r border-r-black"> </div>
-            </div>
-          </div>
+         
           </div>
           <div className="mt-10 md:hidden">
               <div className="relative inline-block">
@@ -292,13 +402,53 @@ const Home = () => {
 
           </div>
          
-          <div className="hidden md:flex ">
+          <div className="hidden md:flex flex flex-col">
             <div className="font-bold text-5xl ml-14 my-10 ">
               EXPLORE OUR PARTNERS
             </div>
-            <div>
-              <img src={Img6} className="w-screen" />
+            <div className="relative h-screen">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${Img6})` }}
+      ></div>
+
+      <div className="relative z-10 h-full flex flex-col justify-end">
+        <div className="flex  w-full h-full justify-between">
+         
+        <div className="flex hidden md:flex  border-r border-white">
+            <div className="pb-1 text-white items-end mt-56">
+              <div className=" mt-80 text-xl text-center mr-8 px-4">LAMBORGHINI 
+              </div>
             </div>
+          </div>
+          <div className="flex hidden md:flex  border-r border-white">
+            <div className="pb-1 text-white items-end mt-56">
+              <div className=" mt-80 text-xl text-center mr-8 px-4 ">ZENVO AUTOMOBILE</div>
+            </div>
+          </div>
+          <div className="flex hidden md:flex  border-r border-white">
+            <div className="pb-1 text-white  mt-56">
+              <div className=" mt-80 text-xl text-center mr-8 px-10">JETOUR</div>
+            </div>
+          </div>
+          <div className="flex hidden md:flex  border-r border-white">
+            <div className="pb-1 text-white mt-56">
+              <div className=" mt-80 text-xl text-center mr-8 px-4">THE ELITE CARS</div>
+            </div>
+          </div>
+          <div className="flex hidden md:flex  border-r border-white">
+            <div className="pb-1 text-white mt-56">
+              <div className=" mt-80 text-xl text-center mr-8 px-4">SUN CITY MOTORS</div>
+            </div>
+          </div>
+          <div className="flex hidden md:flex border-r border-white">
+            <div className="pb-1 text-white mt-56">
+              <div className=" mt-80 text-xl text-center mr-8 px-4">ECOMMERCE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
           </div>
           <div className=" m-6 md:hidden">
           <div className="flex justify-between">
@@ -347,7 +497,7 @@ const Home = () => {
 
               <div>LAMBORGHINI URUS SE DEBUTS IN GERMANY</div>
             </div>
-            <div className="mt-16 flex gap-3">
+            <div className="mt-16 flex gap-3 justify-between">
               <div>
                 <div>
                   <img src={Img2} />
@@ -355,12 +505,12 @@ const Home = () => {
                 <div className="text-masala-500 font-bold mt-3">
                   February 22, 2024, Dubai, UAE
                 </div>
-                <div className="font-bold text-3xl my-3">
-                  The Elite Cars Presents
+                <div className="font-bold text-2xl ">
+                 THE ELITE CARS PRESENTS
                   <br />
-                  Zenvo Aurora - Agil & Tur in
+                 ZENORA AURORA - AGIL TUR 
                   <br />
-                  the MENA
+                  THE MENA
                 </div>
                 <div>
                   <button className="m-2 p-1 border-black border rounded-full px-10  ">
@@ -375,12 +525,11 @@ const Home = () => {
                 <div className="text-masala-500 font-bold mt-3">
                   27 January 2024, Dubai, UAE
                 </div>
-                <div className="font-bold text-3xl my-3">
-                  The All-New Jetour T2 <br />
-                  Debuts in the UAE
-                </div>
+                <div className="font-bold text-2xl ">
+                 THE ALL NEW JETOUR
+ T2 DEBUTS IN THE UAE                </div>
 
-                <div className="mt-12">
+                <div className="mt-6">
                   <button className="m-4 p-1 border-black border rounded-full px-10  ">
                     READ MORE
                   </button>
@@ -393,11 +542,11 @@ const Home = () => {
                 <div className="text-masala-500 font-bold mt-3">
                   March 16, 2023, Dubai, UAE
                 </div>
-                <div className="font-bold text-3xl my-3">
-                  2023 Jetour Dashing Makes <br />
-                  Its Debut in UAE Through
-                  <br />
-                  The Elite Cars
+                <div className="font-bold text-2xl ">
+                  2023 JETOUR DASHING<br /> MAKES 
+                  ITS DEBUT IN UAE <br />THROUGH
+                
+                  THE ELITE CARS
                 </div>
                 <div className="">
                   <button className="m-4 p-1 border-black border rounded-full px-10  ">
@@ -566,23 +715,23 @@ const Home = () => {
                   className="w-full h-auto"
                 />
                 <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
-                <div>
-                  <div className="absolute top-0 left-0 w-full h-full text-white  m-20 mb-24">
-                    <div className="w-[800px]">
-                      <div className="font-extrabold text-4xl text-white">
+                <div className="">
+                  <div className="absolute top-8 left-20 right-80 w-full h-full text-white   ">
+                    <div className=" mx-20 ">
+                      <div className="font-extrabold w-[200]  text-4xl text-white">
                         {" "}
                         OUR BRANDS
                       </div>
-                      <div className="text-nobel-500 mt-8">
+                      <div className="text-nobel-500 w-[700px] ">
                         Our portfolio showcases a diverse range of projects in
                         different scales and styles, reflecting our commitment
                         to
-                        <br /> excellence and innovation in design. With a team
+                         excellence and innovation in design. With a team
                         of experienced architects, designers and engineers,
-                        ELITE GROUP <br />
+                        ELITE GROUP 
                         provides end-to-end solutions that change people's life.
                       </div>
-                      <div className="mt-12  ">
+                      <div className="mt-12 w-[700px]   ">
                         <div className="flex justify-between ">
                           <div>
                             <img src={Logo2} />
@@ -652,7 +801,7 @@ const Home = () => {
                 
                 </div>
                 <div className="bg-woodsmoke-500 p-5 pb-36 h-screen  ">
-                    <div className="justify-center items-center flex">
+                    <div className="justify-center items-center flex mb-14">
                       <img src={Logo} alt="Logo" />
                     </div>
                     <div className="flex justify-between">

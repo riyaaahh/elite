@@ -10,14 +10,16 @@ import { Bars4Icon } from '@heroicons/react/24/solid';
 
 const Navbar = () => {
   return (
-    <div className='bg-woodsmoke-500 p-2 px-4 font-barlow '>
+    <div className='bg-transparent p-2 px-8 font-barlow '>
         <div className='flex justify-between items-center'>
         <div className='flex gap-6  hidden md:flex'>
     <div><img src={FB} alt="Facebook" /></div>
-    <div><img src={Twtr} alt="Twitter" /></div>
     <div><img src={Lin} alt="LinkedIn" /></div>
-    <div><img src={Yt} alt="Youtube" /></div>
     <div><img src={IG} alt="Instagram" /></div>
+
+    <div><img src={Yt} alt="Youtube" /></div>
+    <div><img src={Twtr} alt="Twitter" /></div>
+
 </div>
 
 
