@@ -34,15 +34,14 @@ import Img6 from "../assets/Img6.png"
 import Img8 from "../assets/Img8.png"
 import ArrowLeft from "../assets/ArrowLeft.png"
 import ArrowRight from "../assets/ArrowRight.png"
-import HomeVideo1 from "./../assets/HomeVideo1.mp4"
 import HomeVideo2 from "./../assets/HomeVideo2.mp4"
 import HoverButton from "./HoverButton";
 const Home = () => {
   
-  const [currentBackground, setCurrentBackground] = useState(Img1); // Initial background image
+  const [bgImage, setBgImage] = useState(Img5);
 
   const handleHover = (image) => {
-    setCurrentBackground(image);
+    setBgImage(image);
   };
   return (
     <div className="h-screen w-screen ">
@@ -212,82 +211,7 @@ const Home = () => {
       <div className="font-extrabold text-5xl mb-6 ml-10 mt-10">
         EXPLORE OUR SECTORS
       </div>
-      <div
-      className="flex hidden md:block"
-      style={{
-        backgroundImage: `url(${currentBackground})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        transition: 'background-image 0.3s ease-in-out',
-        height: '100vh', // Adjust height as needed
-      }}
-    >
       
-      <div className="relative z-10 h-full flex flex-col justify-end">
-        <div className="flex w-full h-full justify-between">
-          <div
-            className="flex hidden md:flex border-r border-white cursor-pointer"
-            onMouseEnter={() => handleHover(Img1)}
-          >
-            <div className="pb-1 text-white items-end mt-56">
-              <div className="mt-80 text-xl text-center mr-8 px-4 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
-                AUTOMOBILES
-              </div>
-            </div>
-          </div>
-          <div
-            className="flex hidden md:flex border-r border-white cursor-pointer"
-            onMouseEnter={() => handleHover(Img2)}
-          >
-            <div className="pb-1 text-white items-end mt-56">
-              <div className="mt-80 text-xl text-center mr-8 px-2 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
-                INVESTMENTS
-              </div>
-            </div>
-          </div>
-          <div
-            className="flex hidden md:flex border-r border-white cursor-pointer"
-            onMouseEnter={() => handleHover(Img3)}
-          >
-            <div className="pb-1 text-white mt-56">
-              <div className="mt-80 text-xl text-center mr-8 px-4 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
-                REAL ESTATE
-              </div>
-            </div>
-          </div>
-          <div
-            className="flex hidden md:flex border-r border-white cursor-pointer"
-            onMouseEnter={() => handleHover(Img4)}
-          >
-            <div className="pb-1 text-white mt-56">
-              <div className="mt-80 text-xl text-center mr-8 px-4 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
-                HEALTHCARE
-              </div>
-            </div>
-          </div>
-          <div
-            className="flex hidden md:flex border-r border-white cursor-pointer"
-            onMouseEnter={() => handleHover(Img5)}
-          >
-            <div className="pb-1 text-white mt-56">
-              <div className="mt-80 text-xl text-center mr-8 px-4 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
-                EDUCATION
-              </div>
-            </div>
-          </div>
-          <div
-            className="flex hidden md:flex border-r border-white cursor-pointer"
-            onMouseEnter={() => handleHover(Img6)}
-          >
-            <div className="pb-1 text-white mt-56">
-              <div className="mt-80 text-xl text-center mr-8 px-4 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
-                ECOMMERCE
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     </div>
        
         <div className="">
@@ -516,10 +440,10 @@ const Home = () => {
             </div>
             
           </div>
-          <div className="mx-28 my-32 hidden md:block ">
-          <div className="mx-28 my-32 hidden md:block relative">
+          <div className="hidden md:block ">
+          <div className="hidden md:block relative mx-28 my-28">
       <div>
-        <div className="font-bold text-5xl my-4">LAMBORGHINI WORLD</div>
+        <div className="font-bold text-5xl mb-2 ">LAMBORGHINI WORLD</div>
         <div className="relative">
           <img src={Lamborghini} alt="Lamborghini" className="w-full h-auto" />
           <div className="absolute inset-0 flex flex-col justify-end p-4">
@@ -537,65 +461,61 @@ const Home = () => {
             </div>
           </div>
         </div>
+    </div>
+    <div className="mt-16 flex justify-between  ">
+      <div className="relative group justify-between">
+        <div className="w-80 h-80  overflow-hidden relative">
+          <img src={Img2} alt="Image 2" className="object-cover w-full h-full" />
+        </div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 text-white text-center rounded-lg">
+          <div className="text-masala-300 font-bold mt-3">February 22, 2024, Dubai, UAE</div>
+          <div className="font-bold text-2xl mt-3">
+            THE ELITE CARS PRESENTS
+            <br />
+            ZENORA AURORA - AGIL TUR
+            <br />
+            THE MENA
+          </div>
+          <button className="mt-4 px-6 py-2 border border-white rounded-full hover:bg-white hover:text-black transition-colors duration-300">
+            READ MORE
+          </button>
+        </div>
+      </div>
+
+      {/* Image 2 */}
+      <div className="relative group">
+        <div className="w-80 h-80 overflow-hidden relative">
+          <img src={Img1} alt="Image 1" className="object-cover w-full h-full" />
+        </div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 text-white text-center rounded-lg">
+          <div className="text-masala-00 font-bold mt-3">27 January 2024, Dubai, UAE</div>
+          <div className="font-bold text-2xl mt-3">THE ALL NEW JETOUR T2 DEBUTS IN THE UAE</div>
+          <button className="mt-4 px-6 py-2 border border-white rounded-full hover:bg-white hover:text-black transition-colors duration-300">
+            READ MORE
+          </button>
+        </div>
+      </div>
+
+      {/* Image 3 */}
+      <div className="relative group">
+        <div className="w-80 h-80  overflow-hidden relative">
+          <img src={Img3} alt="Image 3" className="object-cover w-full h-full" />
+        </div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 text-white text-center rounded-lg">
+          <div className="text-masala-300 font-bold mt-3">March 16, 2023, Dubai, UAE</div>
+          <div className="font-bold text-2xl mt-3">
+            2023 JETOUR DASHING
+            <br />
+            MAKES ITS DEBUT IN UAE
+            <br />
+            THROUGH THE ELITE CARS
+          </div>
+          <button className="mt-4 px-6 py-2 border border-white rounded-full hover:bg-white hover:text-black transition-colors duration-300">
+            READ MORE
+          </button>
+        </div>
       </div>
     </div>
-            <div className="mt-16 flex gap-3 justify-between">
-              <div>
-                <div>
-                  <img src={Img2} />
-                </div>
-                <div className="text-masala-500 font-bold mt-3">
-                  February 22, 2024, Dubai, UAE
-                </div>
-                <div className="font-bold text-2xl ">
-                 THE ELITE CARS PRESENTS
-                  <br />
-                 ZENORA AURORA - AGIL TUR 
-                  <br />
-                  THE MENA
-                </div>
-                <div>
-                  <button className="m-2 p-1 border-black border rounded-full px-10  ">
-                    READ MORE
-                  </button>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <img src={Img1} />
-                </div>
-                <div className="text-masala-500 font-bold mt-3">
-                  27 January 2024, Dubai, UAE
-                </div>
-                <div className="font-bold text-2xl ">
-                 THE ALL NEW JETOUR
- T2 DEBUTS IN THE UAE                </div>
-
-                <div className="mt-6">
-                  <button className="m-4 p-1 border-black border rounded-full px-10  ">
-                    READ MORE
-                  </button>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <img src={Img3} />
-                </div>
-                <div className="text-masala-500 font-bold mt-3">
-                  March 16, 2023, Dubai, UAE
-                </div>
-                <div className="font-bold text-2xl ">
-                  2023 JETOUR DASHING<br /> MAKES 
-                  ITS DEBUT IN UAE <br />THROUGH
-                
-                  THE ELITE CARS
-                </div>
-                <div className="">
-                  <button className="m-4 p-1 border-black border rounded-full px-10  ">
-                    READ MORE
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
           <div className="flex">
@@ -842,10 +762,10 @@ const Home = () => {
                   </div>
                 
                 </div>
-                <div className="bg-woodsmoke-500 p-5  h-screen  ">
+                <div className="bg-woodsmoke-500 p-5   ">
                     <div className="justify-center items-center flex ">
                       <img src={Logo} alt="Logo" />
-                    </div>npm run delivering
+                    </div>
                     <div className="flex justify-between">
                       <div>
                         <div className="text-masala-300 text-3xl">ABOUT US</div>
