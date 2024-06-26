@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import AboutImg from "./../assets/AboutImg.png";
+import AboutImgMob from "./../assets/AboutImgMob.png";
+
 import LamborghiniMob from "../assets/LamborghiniMob.png";
 import Facebook from "../assets/Facebook.png";
 import Twitter from "../assets/Twitter.png";
@@ -126,9 +128,10 @@ const Home = () => {
 
       <div className="font-barlow flex flex-col  bg-blackhaze-500">
         <div className="flex flex-col-reverse lg:flex-row mx-4 lg:mx-0  lg:my-0">
-          <div className=" lg:w-2/4  mr-5 lg:mr-0 mt-2 lg:mt-0">
-            <img src={AboutImg} className="" />
-          </div>
+        <div className="lg:w-2/4 mr-5 lg:mr-0 mt-2 lg:mt-0">
+  <img src={AboutImg} className="hidden lg:block" />
+  <img src={AboutImgMob} className="block lg:hidden" />
+</div>
           <div className="lg:w-1/2 ml-2 mt-4 lg:mt-6 lg:ml-4 ">
             <div className="mt-4">
               <div className="font-extrabold text-3xl lg:text-5xl mb-2">
@@ -458,30 +461,37 @@ REAL ESTATE    </div>
               </div>
             </div>
           </div>
-          <div className="mt-10 md:hidden">
-            <div className="relative inline-block">
-              <img
-                src={ImgMob3}
-                alt="Footer Image"
-                className=" h-auto w-screen"
-              />
-              <div className="absolute top-0 left-0 w-full  h-64  bg-black bg-opacity-50">
-                <div className="absolute mb-20 text-white m-8 mr-12 ">
-                  <div className="font-bold text-5xl ">CAREERS</div>
-                  <div className="text-xl mt-3">Join us in enriching lives</div>
-                  <div className="text-sm mt-3 text-chicago-400">
-                    Integrity, Commitment and Innovation form the foundation of
-                    our values, and if your passion lies in empowering lives and
-                    want to be of service in creating a better world, we are
-                    looking for you. Join us to be a part of a transformational
-                    journey.
-                  </div>
-                  <div></div>
-                </div>
+          <div className="ml-4 mt-8 md:hidden">
+          <div className="font-extrabold text-3xl mb-6">
+            EXPLORE OUR PARTNERS
+          </div>
+          <div className="  ">
+            <div className="flex gap-1 mb-3">
+              <div className="text-black p-1  border  text-xs px-4 border-black rounded-full">
+              Lamborghini
+              </div>
+              <div className=" text-black p-1 border text-xs px-4 border-black rounded-full">
+              Zenvo Automobile
+              </div>
+              <div className=" text-black p-1  border text-xs px-4 text-nowrap border-black rounded-full">
+              Jetour              </div>
+            </div>
+            <div className="flex gap-2 mb-3"></div>
+            <div className="flex gap-1 mb-3">
+              <div className=" text-black p-1  border text-xs px-4 border-black rounded-full">
+              The Elite Cars
+              </div>
+              <div className=" text-black  border p-1   text-xs px-4 border-black rounded-full">
+              Sun city Motors
               </div>
             </div>
           </div>
+        </div>
 
+        <div className="flex hidden md:block">
+          <div className="font-extrabold text-5xl mb-6 ml-10 mt-10">
+            EXPLORE OUR PARTNERS
+          </div>
           <div
       className="flex hidden md:block"
       style={{
@@ -501,7 +511,7 @@ REAL ESTATE    </div>
              <div className="pb-1 text-white mt-40  relative">
   <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white transition-opacity relative overflow-hidden">
     <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
-AUTOMOBILES    </div>
+    LAMBORGHINI     </div>
     <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     </div>
@@ -516,7 +526,7 @@ AUTOMOBILES    </div>
             <div className="pb-1 text-white mt-40 relative">
   <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white  transition-opacity relative overflow-hidden">
     <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
-      INVESTMENT
+    ZENVO AUTOMOBILE
     </div>
     <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -532,7 +542,7 @@ AUTOMOBILES    </div>
             <div className="pb-1 text-white mt-40 relative">
   <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white  transition-opacity relative overflow-hidden">
     <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
-REAL ESTATE    </div>
+    JETOUR   </div>
     <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     </div>
@@ -547,7 +557,7 @@ REAL ESTATE    </div>
               <div className="pb-1 text-white mt-40 relative">
   <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white  transition-opacity relative overflow-hidden">
     <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
-      HEALTHCARE 
+    THE ELITE CARS 
     </div>
     <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -563,8 +573,7 @@ REAL ESTATE    </div>
             <div className="pb-1 text-white mt-40 relative">
   <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white  transition-opacity relative overflow-hidden">
     <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
-      EDUCATION
-    </div>
+    SUN CITY MOTORS    </div>
     <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     </div>
@@ -572,29 +581,11 @@ REAL ESTATE    </div>
 </div>
 
           </div>
-          <div
-            className="flex hidden md:flex border-r border-white cursor-pointer"
-            onMouseEnter={() => handleHover(Img6)}
-          >
-          <div className="pb-1 text-white mt-40 relative">
-  <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white  transition-opacity relative overflow-hidden">
-    <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
-      ECOMMERCE
-    </div>
-    <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    </div>
-  </div>
-</div>
-
-
-
-
-
-          </div>
+        
         </div>
       </div>
     </div>
+        </div>
           <div className=" m-6 md:hidden">
             <div className="flex justify-between">
               <div className="font-extrabold text-base text-nowrap  ">
