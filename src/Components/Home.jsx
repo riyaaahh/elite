@@ -333,7 +333,7 @@ REAL ESTATE    </div>
         <div className="">
           <div className=" m-4 lg:m-8 mr-8 lg:mr-0 mx-6">
             <div className="mr-2 bg-blackhaze-500">
-              <div className=" flex flex-col md:flex-row items-center gap-28 mx-6 mt-3 justify-between">
+              <div className=" flex flex-col md:flex-row items-center gap-4 mx-6 mt-3 justify-between">
                 <div className="font-extrabold text-4xl ml-0 lg:ml-8 text-start">
                   {" "}
                   HIGHLIGHTS
@@ -435,23 +435,23 @@ REAL ESTATE    </div>
               
               </div>
             </div>
-            <div className="  text-center items-center justify-center ml-4 mr-4 mt-4 md:hidden ">
-              <div className="  gap-2 flex justify-between">
-                <div className="bg-black  text-white   text-center justify-center items-center w-full  p-8 py-10 ">
+            <div className="  text-center items-center justify-center  mr-4 mt-4 md:hidden ">
+              <div className=" gap-2 flex justify-between">
+                <div className="bg-white  text-black border border-black   text-center justify-center items-center w-full  p-8 py-10 ">
                   <div className="text-4xl">30+</div>
                   <div className="text-xs text-nowrap">Years of experience</div>
                 </div>
-                <div className="bg-black  text-white  text-center  justify-center items-center w-full p-8   py-10 ">
+                <div className="bg-white  text-black border border-black  text-center  justify-center items-center w-full p-8   py-10 ">
                   <div className="text-4xl">5000+</div>
                   <div className="text-xs">Employers</div>
                 </div>
               </div>
               <div className=" gap-2 flex justify-between">
-                <div className="bg-black text-white mt-2 text-center justify-center  items-center w-full  p-8  px-12 py-10">
+                <div className="bg-white text--black border border-black mt-2 text-center justify-center  items-center w-full  p-8  px-12 py-10">
                   <div className="text-4xl">40+</div>
                   <div className="text-xs">Nationalities</div>
                 </div>
-                <div className="bg-black  text-white mt-2  text-center justify-center items-center w-full  p-7  py-10">
+                <div className="bg-white  text-black border border-black mt-2  text-center justify-center items-center w-full  p-7  py-10">
                   <div className="text-4xl">20+</div>
                   <div className="text-nowrap text-xs">Offices / Showrooms</div>
                 </div>
