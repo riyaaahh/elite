@@ -5,6 +5,9 @@ import Home from './Components/Home'
 import Navbar from './Components/Navbar';
 import HoverButton from './Components/HoverButton';
 import SectorExplore from './Components/SectorExplore';
+import AboutUs from './Components/AboutUs';
+import Lamborghini from './Components/Lamborghini';
+
 
 
 function App() {
@@ -17,6 +20,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/HoverButton" element={<HoverButton/>}/>
             <Route path="/SectorExplore" element={<SectorExplore/>}/>
+            <Route path="/AboutUs" element={<AboutUs/>}/>
+            <Route path="/Lamborghini" element={<Lamborghini/>}/>
+
 
 
             

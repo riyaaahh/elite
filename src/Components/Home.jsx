@@ -16,7 +16,6 @@ import Img3 from "../assets/Img3.png";
 import Img5 from "../assets/Img5.png";
 import ImgMob1 from "../assets/ImgMob1.png";
 import ImgMob3 from "../assets/ImgMob3.png";
-import Lamborghini from "../assets/Lamborghini.png";
 import Footer from "../assets/Footer.png";
 import Logo from "./../assets/Logo.png";
 import Logo2 from "../assets/Logo2.png";
@@ -39,6 +38,9 @@ import ArrowRight from "../assets/ArrowRight.png";
 import HomeVideo1 from "./../assets/HomeVideo1.mp4";
 import HomeVideo2 from "./../assets/HomeVideo2.mp4";
 import HoverButton from "./HoverButton";
+import AboutUs from "./AboutUs";
+import Highlights from "./Highlights";
+import Lamborghini from "./Lamborghini";
 const Home = () => {
   const [currentBackground, setCurrentBackground] = useState(Img1); // Initial background image
 
@@ -127,37 +129,7 @@ const Home = () => {
       </div>
 
       <div className="font-barlow flex flex-col  bg-blackhaze-500">
-        <div className="flex flex-col-reverse lg:flex-row mx-4 lg:mx-0  lg:my-0">
-        <div className="lg:w-2/4 mr-5 lg:mr-0 mt-2 lg:mt-0">
-  <img src={AboutImg} className="hidden lg:block" />
-  <img src={AboutImgMob} className="block lg:hidden" />
-</div>
-          <div className="lg:w-1/2 ml-2 mt-4 lg:mt-6 lg:ml-4 ">
-            <div className="mt-4">
-              <div className="font-extrabold text-3xl lg:text-5xl mb-2">
-                ABOUT US
-              </div>
-              <div>
-                <div className="mb-1">
-                  Elite Group Holding Ltd, is more than just a group holding
-                  company. We are visionaries, innovators and creators of
-                  tomorrow’s possibilities.
-                </div>
-                <br />
-                We believe in the power of purpose-driven business. Our
-                commitment revolves around enhancing the quality of life within
-                the communities we serve and continuously seeking new avenues
-                for fostering growth.
-              </div>
-            </div>
-            <button className="my-4 p-3 p-4 py-3 py-4 hidden md:flex flex bg-black border text-white rounded-full items-center px-16">
-              <div className="text-lg">Read More</div>
-              <div className="hidden md:flex mt-1">
-                <ArrowRightIcon className=" w-6 h-6" />
-              </div>
-            </button>
-          </div>
-        </div>
+      <AboutUs/>
 
         <div className="ml-4 mt-4 md:hidden">
           <div className="font-extrabold text-3xl mb-6">
@@ -225,7 +197,7 @@ const Home = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         transition: 'background-image 0.3s ease-in-out',
-        height: '100vh', // Adjust height as needed
+        height: '100vh', 
       }}
     >
       <div className="relative z-10 h-full flex flex-col justify-end">
@@ -334,133 +306,8 @@ REAL ESTATE    </div>
         </div>
 
         <div className="">
-          <div className=" m-4 lg:m-8 mr-8 lg:mr-0 mx-6">
-            <div className="mr-2 bg-blackhaze-500">
-              <div className=" flex flex-col md:flex-row items-center gap-4 mx-6 mt-3 justify-between">
-                <div className="font-extrabold text-4xl ml-0 lg:ml-8 text-start">
-                  {" "}
-                  HIGHLIGHTS
-                </div>
-                <div className="gap-4 flex">
-                <div className="text-base">
-                  We are pragmatic in our approach to design and handle each
-                  project in accordance with its particular set of requirements
-                   and imperatives. When working in conservation areas or
-                  on
-                   listed buildings we aim to respect retain the best of
-                  the
-                  historic elements and to supplement these with
-                  contemporary
-                  interventions wherever appropriate.
-                </div>
-                <div className=" flex hidden md:flex text-base">
-                  {" "}
-                  Energy efficiency and sustainability issues are given 
-                  serious consideration at the outset of the design
-                 
-                  process, in particular on new-build projects. Properly
-                
-                  considered they play an important part in adding
-               
-                  present and future value.
-                </div>
-                </div>
-              </div>{" "}
-              <div className="ml-4 lg:ml-2 flex  hidden text-xs text-nowrap">
-                  We are pragmatic in our approach to design and handle each
-                  project in accordance with its particular set of requirements
-                  and imperatives. When working in conservation areas or on
-                  listed buildings we aim to respect and retain the best of the
-                  historic elements and to supplement these with contemporary
-                  interventions s wherever appropriate.
-                </div>
-              <div className="ml-4 lg:ml-2 flex mt-12  ">
-                
-              </div>
-              <div className="flex  m-4 text-center items-center justify-between flex hidden md:flex ">
-                <div className="items-center text-center flex py-10">
-                  <div className="p-2 py-14  border-l pr-4 border-l-black"> </div>
-                  <div>
-                    <div>
-                      <div className=" text-5xl">30+</div>
-                      <div className="">Years of experience</div>
-                    </div>
-                    <div>
-                      <div className="p-2 px-32 mt-8 border-b border-b-black">
-                        {" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-2 py-14 border-r pl-4 border-r-black"> </div>
-                </div>
-                <div className="items-center text-center flex py-10">
-                  <div>
-                    <div>
-                      <div className=" text-5xl">5000+</div>
-                      <div className="">Employers</div>
-                    </div>
-                    <div>
-                      <div className="p-2 px-32 mt-8 border-b border-b-black">
-                        {" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-2 py-14 pl-4 pr-4 border-r border-r-black"> </div>
-                </div> 
-                  <div className="items-center text-center flex py-10">
-                  <div>
-                    <div>
-                      <div className=" text-5xl">40+</div>
-                      <div className="">Nationalities</div>
-                    </div>
-                    <div>
-                      <div className="p-2 px-32 mt-8 border-b border-b-black">
-                        {" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-2 py-14 border-r pl-4 pr-4 border-r-black"> </div>
-                </div> 
-                  <div className="items-center text-center flex py-10">
-                  <div>
-                    <div>
-                      <div className=" text-5xl">20+</div>
-                      <div className="">Offices/Showrooms</div>
-                    </div>
-                    <div>
-                      <div className="p-2 px-32 mt-8 border-b border-b-black">
-                        {" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-2 py-14 border-r pl-4 border-r-black"> </div>
-                </div>
-              
-              </div>
-            </div>
-            <div className="  text-center items-center justify-center  mr-4 mt-4 md:hidden ">
-              <div className=" gap-2 flex justify-between">
-                <div className="bg-white  text-black border border-black   text-center justify-center items-center w-full  p-8 py-10 ">
-                  <div className="text-4xl">30+</div>
-                  <div className="text-xs text-nowrap">Years of experience</div>
-                </div>
-                <div className="bg-white  text-black border border-black  text-center  justify-center items-center w-full p-8   py-10 ">
-                  <div className="text-4xl">5000+</div>
-                  <div className="text-xs">Employers</div>
-                </div>
-              </div>
-              <div className=" gap-2 flex justify-between">
-                <div className="bg-white text--black border border-black mt-2 text-center justify-center  items-center w-full  p-8  px-12 py-10">
-                  <div className="text-4xl">40+</div>
-                  <div className="text-xs">Nationalities</div>
-                </div>
-                <div className="bg-white  text-black border border-black mt-2  text-center justify-center items-center w-full  p-7  py-10">
-                  <div className="text-4xl">20+</div>
-                  <div className="text-nowrap text-xs">Offices / Showrooms</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Highlights/>
+       
           <div className="ml-4 mt-8 md:hidden">
           <div className="font-extrabold text-3xl mb-6">
             EXPLORE OUR PARTNERS
@@ -586,6 +433,7 @@ REAL ESTATE    </div>
       </div>
     </div>
         </div>
+        <Lamborghini/>
           <div className=" m-6 md:hidden">
             <div className="flex justify-between">
               <div className="font-extrabold text-base text-nowrap  ">
@@ -619,98 +467,7 @@ REAL ESTATE    </div>
               </div>
             </div>
           </div>
-          <div className="mx-28 my-32 hidden md:block ">
-            <div className="mx-28 my-32 hidden md:block relative">
-              <div>
-                <div className="font-bold text-5xl my-4">LAMBORGHINI WORLD</div>
-                <div className="relative">
-                  <img
-                    src={Lamborghini}
-                    alt="Lamborghini"
-                    className="w-full h-auto"
-                  />
-                  <div className="absolute inset-0 flex flex-col justify-end p-4">
-                    <div className="text-masala-300 font-bold">
-                      May 20, 2024, Dubai, UAE
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <div className="font-bold text-2xl my-3 text-white">
-                        LAMBORGHINI URUS SE DEBUTS IN GERMANY
-                      </div>
-                      <a
-                        href="/path-to-detailed-article"
-                        className="text-white underline"
-                      >
-                        READ MORE
-                      </a>{" "}
-                      {/* Update the href attribute */}
-                    </div>
-                    <div className="text-white">
-                      LAMBORGHINI URUS SE DEBUTS IN GERMANY
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="mt-16 flex gap-3 justify-between">
-              <div>
-                <div>
-                  <img src={Img2} />
-                </div>
-                <div className="text-masala-500 font-bold mt-3">
-                  February 22, 2024, Dubai, UAE
-                </div>
-                <div className="font-bold text-2xl ">
-                  THE ELITE CARS PRESENTS
-                  <br />
-                  ZENORA AURORA - AGIL TUR
-                  <br />
-                  THE MENA
-                </div>
-                <div>
-                  <button className="m-2 p-1 border-black border rounded-full px-10  ">
-                    READ MORE
-                  </button>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <img src={Img1} />
-                </div>
-                <div className="text-masala-500 font-bold mt-3">
-                  27 January 2024, Dubai, UAE
-                </div>
-                <div className="font-bold text-2xl ">
-                  THE ALL NEW JETOUR T2 DEBUTS IN THE UAE{" "}
-                </div>
-
-                <div className="mt-6">
-                  <button className="m-4 p-1 border-black border rounded-full px-10  ">
-                    READ MORE
-                  </button>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <img src={Img3} />
-                </div>
-                <div className="text-masala-500 font-bold mt-3">
-                  March 16, 2023, Dubai, UAE
-                </div>
-                <div className="font-bold text-2xl ">
-                  2023 JETOUR DASHING
-                  <br /> MAKES ITS DEBUT IN UAE <br />
-                  THROUGH THE ELITE CARS
-                </div>
-                <div className="">
-                  <button className="m-4 p-1 border-black border rounded-full px-10  ">
-                    READ MORE
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex">
+       <div className="flex">
             <div className="flex flex-col md:hidden">
               <div className="relative inline-block">
                 <img src={ImgMob4} alt="Footer Image" className="w-screen" />
@@ -749,12 +506,12 @@ REAL ESTATE    </div>
                   </div>
                 </div>
               </div>
-              <div className="bg-woodsmoke-500    ">
-                <div className="p-5">
+              <div className="bg-woodsmoke-500     ">
+                <div className="px-10 mr-20 ml-8">
                   <div className=" flex my-8 mx-6 ">
                     <img src={Logo} alt="Logo" />
                   </div>
-                  <div className=" justify-between">
+                  <div className=" justify-between mr-12">
                     <div className="">
                       <div className="text-white text-3xl">ABOUT US</div>
                       <div className="text-white text-sm mt-6 text-nowrap ">
@@ -795,7 +552,9 @@ REAL ESTATE    </div>
                         <div>Group Companies</div>
                         <div>Real Estate </div>
                         <div> Healthcare</div>
-                        <div> Education Ecommerce</div>
+                        <div>   Education</div>
+
+                        <div> Ecommerce</div>
                       </div>
                     </div>
                     <div className="text-masala-300 mt-8">
