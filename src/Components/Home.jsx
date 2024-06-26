@@ -29,12 +29,14 @@ import Lin from '../assets/Lin.png'
 import Twtr from '../assets/Twtr.png'
 import Yt from '../assets/Yt.png'
 import { ArrowRightEndOnRectangleIcon } from "@heroicons/react/24/outline";
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import { ArrowRightIcon } from '@heroicons/react/solid'; // Solid icons from Heroicons v1
 import Img6 from "../assets/Img6.png"
 import Img8 from "../assets/Img8.png"
 import ArrowLeft from "../assets/ArrowLeft.png"
 import ArrowRight from "../assets/ArrowRight.png"
 import HomeVideo1 from "./../assets/HomeVideo1.mp4"
+import HomeVideo2 from "./../assets/HomeVideo2.mp4"
+import HoverButton from "./HoverButton";
 const Home = () => {
   return (
     <div className="h-screen w-screen ">
@@ -43,9 +45,9 @@ const Home = () => {
     autoPlay
     loop
     muted
-    className="absolute inset-0 w-screen h-full object-cover"
+    className="absolute inset-0 top-0 w-screen h-full object-cover"
   >
-    <source src={HomeVideo1} type="video/mp4" />
+    <source src={HomeVideo2} type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
@@ -57,11 +59,7 @@ const Home = () => {
         DRIVING EXCELLENCE <br />
         BUILDING FEATURES
       </div>
-      <button className="my-4 flex py-2 border-white border rounded-full items-center px-10">
-        <div className="text-base">Explore</div>
-      <div className="hidden md:flex"><ArrowRightIcon className="w-8 h-8"/></div>
-
-      </button>
+      <HoverButton/>
 
       <div className="flex gap-8 mt-40 w-full">
       <div >
@@ -121,12 +119,12 @@ const Home = () => {
 </div>
 
       <div className="font-barlow flex flex-col  bg-blackhaze-500">
-      <div className="flex flex-col-reverse lg:flex-row mx-6 lg:mx-0  lg:my-0">
-      <div className=" lg:w-2/4 mr-5 lg:mr-0 mt-4 lg:mt-0">
+      <div className="flex flex-col-reverse lg:flex-row mx-4 lg:mx-0  lg:my-0">
+      <div className=" lg:w-2/4  mr-5 lg:mr-0 mt-2 lg:mt-0">
       <img src={AboutImg} className="" />
   </div>
-  <div className="lg:w-1/2 ml-4 mt-4 lg:mt-6 lg:ml-6 ">
-  <div className="mt-16">
+  <div className="lg:w-1/2 ml-2 mt-4 lg:mt-6 lg:ml-4 ">
+  <div className="mt-4">
   <div className="font-extrabold text-3xl lg:text-5xl mb-2">ABOUT US</div>
   <div>
       <div className="mb-1">
@@ -151,19 +149,19 @@ const Home = () => {
  
 </div>
 
-         <div className="ml-4  md:hidden">
-          <div className="font-extrabold text-4xl mb-6">
+         <div className="ml-4 mt-4 md:hidden">
+          <div className="font-extrabold text-3xl mb-6">
             EXPLORE OUR GROUP COMPANIES
           </div>
           <div className="  ">
-            <div className="flex gap-2 mb-3">
-              <div className="text-black p-1 px-8 border  text-sm border-black rounded-full">
+            <div className="flex gap-1 mb-3">
+              <div className="text-black p-1  border  text-xs px-4 border-black rounded-full">
                 AUTOMOTIVE
               </div>
-              <div className=" text-black p-1 px-8 border text-sm border-black rounded-full">
+              <div className=" text-black p-1 border text-xs px-4 border-black rounded-full">
                 INVESTMENTS
               </div>
-              <div className=" text-black p-1 px-8 border text-sm text-nowrap border-black rounded-full">
+              <div className=" text-black p-1  border text-xs px-4 text-nowrap border-black rounded-full">
                 REAL ESTATE
               </div>
             </div>
@@ -172,11 +170,11 @@ const Home = () => {
 
               
             </div>
-            <div className="flex gap-2 mb-3">
-            <div className=" text-black p-1 px-10 border text-sm border-black rounded-full">
+            <div className="flex gap-1 mb-3">
+            <div className=" text-black p-1  border text-xs px-4 border-black rounded-full">
                 EDUCATION
               </div>
-            <div className=" text-black  border p-1  px-8 text-sm border-black rounded-full">
+            <div className=" text-black  border p-1   text-xs px-4 border-black rounded-full">
               E-COMMERCE
             </div>
            
@@ -186,22 +184,19 @@ const Home = () => {
         <div className="relative inline-block  md:hidden">
           <img src={ImgMob1} className="w-full mt-4" />
           <div className="absolute top-0 left-0 w-full h-full text-white  justify-center  my-36 items-center mb-24">
-            <div className="absolute ml-14">
+            <div className="absolute ">
               <div className="text-xl text-center mb-3">
                 Lamborghini Abu Dhabi and Dubai
               </div>
-              <div>
-                <div className="mb-1">
-                Ultimate Motors upholds its dedication to
-                </div>
-                <div className="mb-1"> delivering unrivaled excellence in </div>
-                <div className="mb-1">
-                customer experience and top-tier </div>
+              <div className="text-base mx-12">
+                Ultimate Motors upholds its dedication to<br/>
+                 delivering unrivaled excellence in <br/>
+                customer experience and top-tier <br/>
                 automotive services.
               </div>
               
             </div>
-            <div className="flex justify-between mt-56 mx-4">
+            <div className="flex justify-between mt-72 mx-12 ">
                 <div><img className="border border-white p-1 px-2" src={ArrowLeft}/></div>
                 <div><img className="border border-white p-1 px-2" src={ArrowRight}/></div>
               </div>
@@ -255,12 +250,12 @@ const Home = () => {
     </div>
         </div>
        
-        <div className="bg-blackhaze-500">
-          <div className=" m-12 lg:m-8 mr-16 lg:mr-0">
-            <div className="mr-2">
-          <div className=" flex flex-col md:flex-row    items-center jut mt-3 justify-between">
-            <div className="font-bold text-5xl ml-0 lg:ml-8 text-start"> HIGHLIGHTS</div>
-            <div className="ml-4 lg:ml-2 flex  hidden text-nowrap">
+        <div className="">
+          <div className=" m-4 lg:m-8 mr-8 lg:mr-0">
+            <div className="mr-2 bg-blackhaze-500">
+          <div className=" flex flex-col md:flex-row items-center  mt-3 justify-between">
+            <div className="font-extrabold text-3xl ml-0 lg:ml-8 text-start"> HIGHLIGHTS</div>
+            <div className="ml-4 lg:ml-2 flex  hidden text-xs text-nowrap">
               We are pragmatic in our approach to design  and
               handle each project in accordance with its particular
             
@@ -272,19 +267,21 @@ const Home = () => {
               and to supplement these with contemporary interventions s
               wherever appropriate.
             </div>
-            <div className="ml-4 lg:ml-2 flex mt-12  ">
-              We are pragmatic in our approach to design and 
-              handle<br/> each project in accordance with its particular
-              <br />
-              set of requirements and imperatives. When working in
-              <br />
-              conservation areas or on listed buildings we aim to
-              <br />
-              respect and retain the best of the historic elements
-              <br />
-              and to supplement these with contemporary interventions <br />
+            <div className="text-xs">
+           We are pragmatic in our approach to design and 
+              handle each project in accordance with  its particular
+              
+              set of requirements<br/> and imperatives. When working in
+             
+              conservation  areas or on<br/> listed buildings we aim to
+              
+              respect  retain the best of the<br/> historic elements
+             
+              and   to supplement these with contemporary<br/> interventions 
               wherever appropriate.
-            </div>
+            </div>  
+            </div> <div className="ml-4 lg:ml-2 flex mt-12  ">
+            
             <div className=" flex hidden md:flex">
               {" "}
               Energy efficiency and sustainability issues are given <br />
@@ -348,9 +345,7 @@ const Home = () => {
                   <div className="">Offices / Showrooms</div>
                 </div>
                 <div>
-                  <div className="p-2 px-32 mt-8 border-b border-b-black">
-                    {" "}
-                  </div>
+                 
                 </div>
               </div>
               <div className="p-2 py-14 border-r border-r-black"> </div>
@@ -800,10 +795,10 @@ const Home = () => {
                   </div>
                 
                 </div>
-                <div className="bg-woodsmoke-500 p-5 pb-36 h-screen  ">
+                <div className="bg-woodsmoke-500 p-5  h-screen  ">
                     <div className="justify-center items-center flex mb-14">
                       <img src={Logo} alt="Logo" />
-                    </div>
+                    </div>npm run delivering
                     <div className="flex justify-between">
                       <div>
                         <div className="text-masala-300 text-3xl">ABOUT US</div>
@@ -886,6 +881,12 @@ const Home = () => {
 
                     </div>
                   </div>
+                
+                    <div className="w-full border-t border-white"></div>
+<div className="p-5 text-chicago-500 text-sm">
+  <div className="text-nowrap my-4"> Copyright © 2024 | ALL RIGHTS RESERVED | The Elite Cars LLC</div>
+  <div><span className="text-white font-bold text-nowrap text-xs">Disclaimer:</span> The Elite Cars is not endorsed by, directly affiliated with, maintained or sponsored by any car manufacturer.</div>
+</div>
               </div>
 
           </div>

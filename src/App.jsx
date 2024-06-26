@@ -4,6 +4,8 @@ import './App.css'
 import Home from './Components/Home'
 import Navbar from './Components/Navbar';
 import HomeMob from './Components/HomeMob';
+import HoverButton from './Components/HoverButton';
+
 function App() {
 
   return (
@@ -13,6 +15,8 @@ function App() {
 
             <Route path="/" element={<Home />} />
             <Route path="/HomeMob" element={<HomeMob/>}/>
+            <Route path="/HoverButton" element={<HoverButton/>}/>
+
 
             
 
