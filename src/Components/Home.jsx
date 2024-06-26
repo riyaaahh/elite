@@ -37,8 +37,8 @@ import ArrowRight from "../assets/ArrowRight.png"
 import HomeVideo2 from "./../assets/HomeVideo2.mp4"
 import HoverButton from "./HoverButton";
 const Home = () => {
-  
-  const [bgImage, setBgImage] = useState(Img5);
+
+  const [currentBackground, setCurrentBackground] = useState(Img1); // Initial background image
 
   const handleHover = (image) => {
     setBgImage(image);
@@ -440,82 +440,86 @@ const Home = () => {
             </div>
             
           </div>
-          <div className="hidden md:block ">
-          <div className="hidden md:block relative mx-28 my-28">
-      <div>
-        <div className="font-bold text-5xl mb-2 ">LAMBORGHINI WORLD</div>
-        <div className="relative">
-          <img src={Lamborghini} alt="Lamborghini" className="w-full h-auto" />
-          <div className="absolute inset-0 flex flex-col justify-end p-4">
-            <div className="text-masala-300 font-bold">
-              May 20, 2024, Dubai, UAE
-            </div>
-            <div className="flex justify-between items-center">
-              <div className="font-bold text-2xl my-3 text-white">
-                LAMBORGHINI URUS SE DEBUTS IN GERMANY
+          <div className="mx-28 my-32 hidden md:block ">
+            <div className="mx-28 my-32 hidden md:block relative">
+              <div>
+                <div className="font-bold text-5xl my-4">LAMBORGHINI WORLD</div>
+                <div className="relative">
+                  <img src={Lamborghini} alt="Lamborghini" className="w-full h-auto" />
+                  <div className="absolute inset-0 flex flex-col justify-end p-4">
+                    <div className="text-masala-300 font-bold">
+                      May 20, 2024, Dubai, UAE
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <div className="font-bold text-2xl my-3 text-white">
+                        LAMBORGHINI URUS SE DEBUTS IN GERMANY
+                      </div>
+                      <a href="/path-to-detailed-article" className="text-white underline">READ MORE</a> {/* Update the href attribute */}
+                    </div>
+                    <div className="text-white">
+                      LAMBORGHINI URUS SE DEBUTS IN GERMANY
+                    </div>
+                  </div>
+                </div>
               </div>
-              <a href="/path-to-detailed-article" className="text-white underline">READ MORE</a> {/* Update the href attribute */}
             </div>
-            <div className="text-white">
-              LAMBORGHINI URUS SE DEBUTS IN GERMANY
-            </div>
-          </div>
-        </div>
-    </div>
-    <div className="mt-16 flex justify-between  ">
-      <div className="relative group justify-between">
-        <div className="w-80 h-80  overflow-hidden relative">
-          <img src={Img2} alt="Image 2" className="object-cover w-full h-full" />
-        </div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 text-white text-center rounded-lg">
-          <div className="text-masala-300 font-bold mt-3">February 22, 2024, Dubai, UAE</div>
-          <div className="font-bold text-2xl mt-3">
-            THE ELITE CARS PRESENTS
-            <br />
-            ZENORA AURORA - AGIL TUR
-            <br />
-            THE MENA
-          </div>
-          <button className="mt-4 px-6 py-2 border border-white rounded-full hover:bg-white hover:text-black transition-colors duration-300">
-            READ MORE
-          </button>
-        </div>
-      </div>
+            <div className="mt-16 flex gap-3 justify-between">
+              <div>
+                <div>
+                  <img src={Img2} />
+                </div>
+                <div className="text-masala-500 font-bold mt-3">
+                  February 22, 2024, Dubai, UAE
+                </div>
+                <div className="font-bold text-2xl ">
+                  THE ELITE CARS PRESENTS
+                  <br />
+                  ZENORA AURORA - AGIL TUR
+                  <br />
+                  THE MENA
+                </div>
+                <div>
+                  <button className="m-2 p-1 border-black border rounded-full px-10  ">
+                    READ MORE
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img src={Img1} />
+                </div>
+                <div className="text-masala-500 font-bold mt-3">
+                  27 January 2024, Dubai, UAE
+                </div>
+                <div className="font-bold text-2xl ">
+                  THE ALL NEW JETOUR
+                  T2 DEBUTS IN THE UAE                </div>
 
-      {/* Image 2 */}
-      <div className="relative group">
-        <div className="w-80 h-80 overflow-hidden relative">
-          <img src={Img1} alt="Image 1" className="object-cover w-full h-full" />
-        </div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 text-white text-center rounded-lg">
-          <div className="text-masala-00 font-bold mt-3">27 January 2024, Dubai, UAE</div>
-          <div className="font-bold text-2xl mt-3">THE ALL NEW JETOUR T2 DEBUTS IN THE UAE</div>
-          <button className="mt-4 px-6 py-2 border border-white rounded-full hover:bg-white hover:text-black transition-colors duration-300">
-            READ MORE
-          </button>
-        </div>
-      </div>
+                <div className="mt-6">
+                  <button className="m-4 p-1 border-black border rounded-full px-10  ">
+                    READ MORE
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img src={Img3} />
+                </div>
+                <div className="text-masala-500 font-bold mt-3">
+                  March 16, 2023, Dubai, UAE
+                </div>
+                <div className="font-bold text-2xl ">
+                  2023 JETOUR DASHING<br /> MAKES
+                  ITS DEBUT IN UAE <br />THROUGH
 
-      {/* Image 3 */}
-      <div className="relative group">
-        <div className="w-80 h-80  overflow-hidden relative">
-          <img src={Img3} alt="Image 3" className="object-cover w-full h-full" />
-        </div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 text-white text-center rounded-lg">
-          <div className="text-masala-300 font-bold mt-3">March 16, 2023, Dubai, UAE</div>
-          <div className="font-bold text-2xl mt-3">
-            2023 JETOUR DASHING
-            <br />
-            MAKES ITS DEBUT IN UAE
-            <br />
-            THROUGH THE ELITE CARS
-          </div>
-          <button className="mt-4 px-6 py-2 border border-white rounded-full hover:bg-white hover:text-black transition-colors duration-300">
-            READ MORE
-          </button>
-        </div>
-      </div>
-    </div>
+                  THE ELITE CARS
+                </div>
+                <div className="">
+                  <button className="m-4 p-1 border-black border rounded-full px-10  ">
+                    READ MORE
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
           <div className="flex">
