@@ -231,61 +231,99 @@ const Home = () => {
             className="flex hidden md:flex border-r border-white cursor-pointer"
             onMouseEnter={() => handleHover(Img1)}
           >
-            <div className="pb-1 text-white items-end mt-56">
-              <div className="mt-80 text-xl text-center mr-8 px-4 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
-                AUTOMOBILES
-              </div>
-            </div>
+             <div className="pb-1 text-white mt-40  relative">
+  <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white transition-opacity relative overflow-hidden">
+    <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
+AUTOMOBILES    </div>
+    <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    </div>
+  </div>
+</div>
+
           </div>
           <div
             className="flex hidden md:flex border-r border-white cursor-pointer"
             onMouseEnter={() => handleHover(Img2)}
           >
-            <div className="pb-1 text-white items-end mt-56">
-              <div className="mt-80 text-xl text-center mr-8 px-2 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
-                INVESTMENTS
-              </div>
-            </div>
+            <div className="pb-1 text-white mt-40 relative">
+  <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white  transition-opacity relative overflow-hidden">
+    <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
+      INVESTMENT
+    </div>
+    <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    </div>
+  </div>
+</div>
+
           </div>
           <div
             className="flex hidden md:flex border-r border-white cursor-pointer"
             onMouseEnter={() => handleHover(Img3)}
           >
-            <div className="pb-1 text-white mt-56">
-              <div className="mt-80 text-xl text-center mr-8 px-4 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
-                REAL ESTATE
-              </div>
-            </div>
+            <div className="pb-1 text-white mt-40 relative">
+  <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white  transition-opacity relative overflow-hidden">
+    <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
+REAL ESTATE    </div>
+    <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    </div>
+  </div>
+</div>
+
           </div>
           <div
             className="flex hidden md:flex border-r border-white cursor-pointer"
-            onMouseEnter={() => handleHover(Img4)}
+            onMouseEnter={() => handleHover(Img8)}
           >
-            <div className="pb-1 text-white mt-56">
-              <div className="mt-80 text-xl text-center mr-8 px-4 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
-                HEALTHCARE
-              </div>
-            </div>
+              <div className="pb-1 text-white mt-40 relative">
+  <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white  transition-opacity relative overflow-hidden">
+    <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
+      HEALTHCARE 
+    </div>
+    <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    </div>
+  </div>
+</div>
+
           </div>
           <div
             className="flex hidden md:flex border-r border-white cursor-pointer"
             onMouseEnter={() => handleHover(Img5)}
           >
-            <div className="pb-1 text-white mt-56">
-              <div className="mt-80 text-xl text-center mr-8 px-4 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
-                EDUCATION
-              </div>
-            </div>
+            <div className="pb-1 text-white mt-40 relative">
+  <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white  transition-opacity relative overflow-hidden">
+    <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
+      EDUCATION
+    </div>
+    <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    </div>
+  </div>
+</div>
+
           </div>
           <div
             className="flex hidden md:flex border-r border-white cursor-pointer"
             onMouseEnter={() => handleHover(Img6)}
           >
-            <div className="pb-1 text-white mt-56">
-              <div className="mt-80 text-xl text-center mr-8 px-4 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
-                ECOMMERCE
-              </div>
-            </div>
+          <div className="pb-1 text-white mt-40 relative">
+  <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white  transition-opacity relative overflow-hidden">
+    <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
+      ECOMMERCE
+    </div>
+    <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    </div>
+  </div>
+</div>
+
+
+
+
+
           </div>
         </div>
       </div>
@@ -444,64 +482,119 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="hidden md:flex flex flex-col">
-            <div className="font-bold text-5xl ml-14 my-10 ">
-              EXPLORE OUR PARTNERS
-            </div>
-            <div className="relative h-screen">
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${Img6})` }}
-              ></div>
+          <div
+      className="flex hidden md:block"
+      style={{
+        backgroundImage: `url(${currentBackground})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        transition: 'background-image 0.3s ease-in-out',
+        height: '100vh', // Adjust height as needed
+      }}
+    >
+      <div className="relative z-10 h-full flex flex-col justify-end">
+        <div className="flex w-full h-full justify-between">
+          <div
+            className="flex hidden md:flex border-r border-white cursor-pointer"
+            onMouseEnter={() => handleHover(Img1)}
+          >
+             <div className="pb-1 text-white mt-40  relative">
+  <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white transition-opacity relative overflow-hidden">
+    <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
+AUTOMOBILES    </div>
+    <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    </div>
+  </div>
+</div>
 
-              <div className="relative z-10 h-full flex flex-col justify-end">
-                <div className="flex  w-full h-full justify-between">
-                  <div className="flex hidden md:flex  border-r border-white">
-                    <div className="pb-1 text-white items-end mt-56">
-                      <div className=" mt-80 text-xl text-center mr-8 px-4">
-                        LAMBORGHINI
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex hidden md:flex  border-r border-white">
-                    <div className="pb-1 text-white items-end mt-56">
-                      <div className=" mt-80 text-xl text-center mr-8 px-4 ">
-                        ZENVO AUTOMOBILE
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex hidden md:flex  border-r border-white">
-                    <div className="pb-1 text-white  mt-56">
-                      <div className=" mt-80 text-xl text-center mr-8 px-10">
-                        JETOUR
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex hidden md:flex  border-r border-white">
-                    <div className="pb-1 text-white mt-56">
-                      <div className=" mt-80 text-xl text-center mr-8 px-4">
-                        THE ELITE CARS
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex hidden md:flex  border-r border-white">
-                    <div className="pb-1 text-white mt-56">
-                      <div className=" mt-80 text-xl text-center mr-8 px-4">
-                        SUN CITY MOTORS
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex hidden md:flex border-r border-white">
-                    <div className="pb-1 text-white mt-56">
-                      <div className=" mt-80 text-xl text-center mr-8 px-4">
-                        ECOMMERCE
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
+          <div
+            className="flex hidden md:flex border-r border-white cursor-pointer"
+            onMouseEnter={() => handleHover(Img2)}
+          >
+            <div className="pb-1 text-white mt-40 relative">
+  <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white  transition-opacity relative overflow-hidden">
+    <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
+      INVESTMENT
+    </div>
+    <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    </div>
+  </div>
+</div>
+
+          </div>
+          <div
+            className="flex hidden md:flex border-r border-white cursor-pointer"
+            onMouseEnter={() => handleHover(Img3)}
+          >
+            <div className="pb-1 text-white mt-40 relative">
+  <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white  transition-opacity relative overflow-hidden">
+    <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
+REAL ESTATE    </div>
+    <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    </div>
+  </div>
+</div>
+
+          </div>
+          <div
+            className="flex hidden md:flex border-r border-white cursor-pointer"
+            onMouseEnter={() => handleHover(Img8)}
+          >
+              <div className="pb-1 text-white mt-40 relative">
+  <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white  transition-opacity relative overflow-hidden">
+    <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
+      HEALTHCARE 
+    </div>
+    <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    </div>
+  </div>
+</div>
+
+          </div>
+          <div
+            className="flex hidden md:flex border-r border-white cursor-pointer"
+            onMouseEnter={() => handleHover(Img5)}
+          >
+            <div className="pb-1 text-white mt-40 relative">
+  <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white  transition-opacity relative overflow-hidden">
+    <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
+      EDUCATION
+    </div>
+    <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    </div>
+  </div>
+</div>
+
+          </div>
+          <div
+            className="flex hidden md:flex border-r border-white cursor-pointer"
+            onMouseEnter={() => handleHover(Img6)}
+          >
+          <div className="pb-1 text-white mt-40 relative">
+  <div className="group mt-80 text-xl text-center py-16 mr-8 px-4  hover:text-white  transition-opacity relative overflow-hidden">
+    <div className="transform group-hover:-translate-y-12 transition-transform duration-300">
+      ECOMMERCE
+    </div>
+    <div className="transform group-hover:-translate-y-12 text-lg opacity-0 group-hover:opacity-100 transition-transform transition-opacity duration-300 mt-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    </div>
+  </div>
+</div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
           <div className=" m-6 md:hidden">
             <div className="flex justify-between">
               <div className="font-extrabold text-base text-nowrap  ">
