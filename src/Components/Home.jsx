@@ -201,7 +201,7 @@ const Home = () => {
                 automotive services.
               </div>
             </div>
-            <div className="flex justify-between mt-72 mx-12 ">
+            <div className="flex justify-between mt-52 mr-8 ml-4 ">
               <div>
                 <img className="border border-white p-1 px-2" src={ArrowLeft} />
               </div>
