@@ -5,20 +5,24 @@ import { ArrowRightIcon } from '@heroicons/react/24/solid';
 const HoverButton = () => {
   const buttonRef = useRef(null);
   const textRef = useRef(null);
+  const circleRef = useRef(null); // Reference for circular background div
 
   useEffect(() => {
     const button = buttonRef.current;
     const text = textRef.current;
+    const circle = circleRef.current;
 
     gsap.set(text, { y: 0 });
 
     const handleMouseEnter = () => {
-      gsap.to(button, { backgroundColor: '#f39c12', duration: 0.3 }); // Change color as needed
+      gsap.to(button, { backgroundColor: '#ccc5bc', duration: 0.3 });
+      gsap.to(circle, { scale: 1, duration: 0.3, ease: 'power2.out' }); // Expand circle
       gsap.to(text, { y: -5, duration: 0.3 });
     };
 
     const handleMouseLeave = () => {
       gsap.to(button, { backgroundColor: 'transparent', duration: 0.3 });
+      gsap.to(circle, { scale: 0, duration: 0.3, ease: 'power2.in' }); // Shrink circle
       gsap.to(text, { y: 0, duration: 0.3 });
     };
 
@@ -34,13 +38,14 @@ const HoverButton = () => {
   return (
     <button
       ref={buttonRef}
-      className="my-4 flex py-3 border-white border gap-2 rounded-full items-center px-10"
+      className="my-4 flex py-3 border-white border gap-2 rounded-full items-center px-10 relative overflow-hidden"
     >
-      <div ref={textRef} className="text-base">
+      <div ref={circleRef} className="bg-circle absolute rounded-full"></div>
+      <div ref={textRef} className="text-base relative z-10">
         Explore
       </div>
       <div className="hidden md:flex">
-        <ArrowRightIcon  className="w-10 h-6" />
+        <ArrowRightIcon className="w-10 h-6 relative z-10" />
       </div>
     </button>
   );

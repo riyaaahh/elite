@@ -12,13 +12,13 @@ const Navbar = () => {
   return (
     <div className='bg-transparent p-2 px-8 font-barlow '>
         <div className='flex justify-between items-center'>
-        <div className='flex gap-6  hidden md:flex'>
-    <div><img src={FB} alt="Facebook" /></div>
-    <div><img src={Lin} alt="LinkedIn" /></div>
-    <div><img src={IG} alt="Instagram" /></div>
+        <div className='flex gap-6  hidden md:flex items-center'>
+    <div className=''><img src={FB} alt="Facebook" /></div>
+    <div className=''><img src={Lin} alt="LinkedIn" /></div>
+    <div className='mt-3'><img src={IG} alt="Instagram" /></div>
 
-    <div><img src={Yt} alt="Youtube" /></div>
-    <div><img src={Twtr} alt="Twitter" /></div>
+    <div className=''><img src={Yt} alt="Youtube" /></div>
+    <div className=''><img src={Twtr} alt="Twitter" /></div>
 
 </div>
 
