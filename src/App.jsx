@@ -4,6 +4,8 @@ import './App.css'
 import Home from './Components/Home'
 import Navbar from './Components/Navbar';
 import HoverButton from './Components/HoverButton';
+import SectorExplore from './Components/SectorExplore';
+
 
 function App() {
 
@@ -14,6 +16,7 @@ function App() {
 
             <Route path="/" element={<Home />} />
             <Route path="/HoverButton" element={<HoverButton/>}/>
+            <Route path="/SectorExplore" element={<SectorExplore/>}/>
 
 
             

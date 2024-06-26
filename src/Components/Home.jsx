@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import AboutImg from "./../assets/AboutImg.png";
 import LamborghiniMob from "../assets/LamborghiniMob.png";
@@ -215,70 +215,117 @@ const Home = () => {
           <div className="font-extrabold text-5xl mb-6 ml-10 mt-10">
             EXPLORE OUR SECTORS
           </div>
-          <div className="relative h-screen">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url(${Img5})` }}
-            ></div>
-
-            <div className="relative z-10 h-full flex flex-col justify-end">
-              <div className="flex  w-full h-full justify-between">
-                <div className="flex hidden md:flex  border-r border-white">
-                  <div className="pb-1 text-white items-end mt-56">
-                    <div className=" mt-80 text-xl text-center mr-8 px-4">
-                      INVESTMENTS
-                    </div>
-                  </div>
-                </div>
-                <div className="flex hidden md:flex  border-r border-white">
-                  <div className="pb-1 text-white items-end mt-56">
-                    <div className=" mt-80 text-xl text-center mr-8 px-4 ">
-                      INVESTMENTS
-                    </div>
-                  </div>
-                </div>
-                <div className="flex hidden md:flex  border-r border-white">
-                  <div className="pb-1 text-white  mt-56">
-                    <div className=" mt-80 text-xl text-center mr-8 px-4">
-                      REAL ESTATE
-                    </div>
-                  </div>
-                </div>
-                <div className="flex hidden md:flex  border-r border-white">
-                  <div className="pb-1 text-white mt-56">
-                    <div className=" mt-80 text-xl text-center mr-8 px-4">
-                      HEALTHCARE
-                    </div>
-                  </div>
-                </div>
-                <div className="flex hidden md:flex  border-r border-white">
-                  <div className="pb-1 text-white mt-56">
-                    <div className=" mt-80 text-xl text-center mr-8 px-4">
-                      EDUCATION
-                    </div>
-                  </div>
-                </div>
-                <div className="flex hidden md:flex border-r border-white">
-                  <div className="pb-1 text-white mt-56">
-                    <div className=" mt-80 text-xl text-center mr-8 px-4">
-                      ECOMMERCE
-                    </div>
-                  </div>
-                </div>
+          <div
+      className="flex hidden md:block"
+      style={{
+        backgroundImage: `url(${currentBackground})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        transition: 'background-image 0.3s ease-in-out',
+        height: '100vh', // Adjust height as needed
+      }}
+    >
+      <div className="relative z-10 h-full flex flex-col justify-end">
+        <div className="flex w-full h-full justify-between">
+          <div
+            className="flex hidden md:flex border-r border-white cursor-pointer"
+            onMouseEnter={() => handleHover(Img1)}
+          >
+            <div className="pb-1 text-white items-end mt-56">
+              <div className="mt-80 text-xl text-center mr-8 px-4 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
+                AUTOMOBILES
+              </div>
+            </div>
+          </div>
+          <div
+            className="flex hidden md:flex border-r border-white cursor-pointer"
+            onMouseEnter={() => handleHover(Img2)}
+          >
+            <div className="pb-1 text-white items-end mt-56">
+              <div className="mt-80 text-xl text-center mr-8 px-2 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
+                INVESTMENTS
+              </div>
+            </div>
+          </div>
+          <div
+            className="flex hidden md:flex border-r border-white cursor-pointer"
+            onMouseEnter={() => handleHover(Img3)}
+          >
+            <div className="pb-1 text-white mt-56">
+              <div className="mt-80 text-xl text-center mr-8 px-4 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
+                REAL ESTATE
+              </div>
+            </div>
+          </div>
+          <div
+            className="flex hidden md:flex border-r border-white cursor-pointer"
+            onMouseEnter={() => handleHover(Img4)}
+          >
+            <div className="pb-1 text-white mt-56">
+              <div className="mt-80 text-xl text-center mr-8 px-4 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
+                HEALTHCARE
+              </div>
+            </div>
+          </div>
+          <div
+            className="flex hidden md:flex border-r border-white cursor-pointer"
+            onMouseEnter={() => handleHover(Img5)}
+          >
+            <div className="pb-1 text-white mt-56">
+              <div className="mt-80 text-xl text-center mr-8 px-4 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
+                EDUCATION
+              </div>
+            </div>
+          </div>
+          <div
+            className="flex hidden md:flex border-r border-white cursor-pointer"
+            onMouseEnter={() => handleHover(Img6)}
+          >
+            <div className="pb-1 text-white mt-56">
+              <div className="mt-80 text-xl text-center mr-8 px-4 hover:bg-black hover:text-white hover:opacity-50 transition-opacity">
+                ECOMMERCE
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+        </div>
 
         <div className="">
-          <div className=" m-4 lg:m-8 mr-8 lg:mr-0">
+          <div className=" m-4 lg:m-8 mr-8 lg:mr-0 mx-6">
             <div className="mr-2 bg-blackhaze-500">
-              <div className=" flex flex-col md:flex-row items-center  mt-3 justify-between">
-                <div className="font-extrabold text-3xl ml-0 lg:ml-8 text-start">
+              <div className=" flex flex-col md:flex-row items-center gap-28 mx-6 mt-3 justify-between">
+                <div className="font-extrabold text-4xl ml-0 lg:ml-8 text-start">
                   {" "}
                   HIGHLIGHTS
                 </div>
-                <div className="ml-4 lg:ml-2 flex  hidden text-xs text-nowrap">
+                <div className="gap-4 flex">
+                <div className="text-base">
+                  We are pragmatic in our approach to design and handle each
+                  project in accordance with its particular set of requirements
+                   and imperatives. When working in conservation areas or
+                  on
+                   listed buildings we aim to respect retain the best of
+                  the
+                  historic elements and to supplement these with
+                  contemporary
+                  interventions wherever appropriate.
+                </div>
+                <div className=" flex hidden md:flex text-base">
+                  {" "}
+                  Energy efficiency and sustainability issues are given 
+                  serious consideration at the outset of the design
+                 
+                  process, in particular on new-build projects. Properly
+                
+                  considered they play an important part in adding
+               
+                  present and future value.
+                </div>
+                </div>
+              </div>{" "}
+              <div className="ml-4 lg:ml-2 flex  hidden text-xs text-nowrap">
                   We are pragmatic in our approach to design and handle each
                   project in accordance with its particular set of requirements
                   and imperatives. When working in conservation areas or on
@@ -286,34 +333,12 @@ const Home = () => {
                   historic elements and to supplement these with contemporary
                   interventions s wherever appropriate.
                 </div>
-                <div className="text-xs">
-                  We are pragmatic in our approach to design and handle each
-                  project in accordance with its particular set of requirements
-                  <br /> and imperatives. When working in conservation areas or
-                  on
-                  <br /> listed buildings we aim to respect retain the best of
-                  the
-                  <br /> historic elements and to supplement these with
-                  contemporary
-                  <br /> interventions wherever appropriate.
-                </div>
-              </div>{" "}
               <div className="ml-4 lg:ml-2 flex mt-12  ">
-                <div className=" flex hidden md:flex">
-                  {" "}
-                  Energy efficiency and sustainability issues are given <br />
-                  serious consideration at the outset of the design
-                  <br />
-                  process, in particular on new-build projects. Properly
-                  <br />
-                  considered they play an important part in adding
-                  <br />
-                  present and future value.
-                </div>
+                
               </div>
               <div className="flex  m-4 text-center items-center justify-between flex hidden md:flex ">
                 <div className="items-center text-center flex py-10">
-                  <div className="p-2 py-14  border-l border-l-black"> </div>
+                  <div className="p-2 py-14  border-l pr-4 border-l-black"> </div>
                   <div>
                     <div>
                       <div className=" text-5xl">30+</div>
@@ -325,13 +350,13 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="p-2 py-14 border-r border-r-black"> </div>
+                  <div className="p-2 py-14 border-r pl-4 border-r-black"> </div>
                 </div>
                 <div className="items-center text-center flex py-10">
                   <div>
                     <div>
                       <div className=" text-5xl">5000+</div>
-                      <div className="">Employees</div>
+                      <div className="">Employers</div>
                     </div>
                     <div>
                       <div className="p-2 px-32 mt-8 border-b border-b-black">
@@ -339,9 +364,9 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="p-2 py-14 border-r border-r-black"> </div>
-                </div>
-                <div className="items-center text-center flex py-10">
+                  <div className="p-2 py-14 pl-4 pr-4 border-r border-r-black"> </div>
+                </div> 
+                  <div className="items-center text-center flex py-10">
                   <div>
                     <div>
                       <div className=" text-5xl">40+</div>
@@ -353,18 +378,23 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="p-2 py-14 border-r border-r-black"> </div>
-                </div>
-                <div className="items-center text-center flex py-10">
+                  <div className="p-2 py-14 border-r pl-4 pr-4 border-r-black"> </div>
+                </div> 
+                  <div className="items-center text-center flex py-10">
                   <div>
                     <div>
                       <div className=" text-5xl">20+</div>
-                      <div className="">Offices / Showrooms</div>
+                      <div className="">Offices/Showrooms</div>
                     </div>
-                    <div></div>
+                    <div>
+                      <div className="p-2 px-32 mt-8 border-b border-b-black">
+                        {" "}
+                      </div>
+                    </div>
                   </div>
-                  <div className="p-2 py-14 border-r border-r-black"> </div>
+                  <div className="p-2 py-14 border-r pl-4 border-r-black"> </div>
                 </div>
+              
               </div>
             </div>
             <div className="  text-center items-center justify-center ml-4 mr-4 mt-4 md:hidden ">
