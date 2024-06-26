@@ -12,8 +12,8 @@ import Img1 from "../assets/Img1.png";
 import Img2 from "../assets/Img2.png";
 import Img3 from "../assets/Img3.png";
 import Img5 from "../assets/Img5.png";
-import ImgMob1 from '../assets/ImgMob1.png'
-import ImgMob3 from '../assets/ImgMob3.png'
+import ImgMob1 from "../assets/ImgMob1.png";
+import ImgMob3 from "../assets/ImgMob3.png";
 import Lamborghini from "../assets/Lamborghini.png";
 import Footer from "../assets/Footer.png";
 import Logo from "./../assets/Logo.png";
@@ -23,22 +23,21 @@ import Logo4 from "../assets/Logo4.png";
 import Logo5 from "../assets/Logo5.png";
 import Logo6 from "../assets/Logo6.png";
 import Logo7 from "../assets/Logo7.png";
-import FB from '../assets/FB.png'
-import IG from '../assets/IG.png'
-import Lin from '../assets/Lin.png'
-import Twtr from '../assets/Twtr.png'
-import Yt from '../assets/Yt.png'
+import FB from "../assets/FB.png";
+import IG from "../assets/IG.png";
+import Lin from "../assets/Lin.png";
+import Twtr from "../assets/Twtr.png";
+import Yt from "../assets/Yt.png";
 import { ArrowRightEndOnRectangleIcon } from "@heroicons/react/24/outline";
-import { ArrowRightIcon } from '@heroicons/react/24/solid'; // Solid icons from Heroicons v1
-import Img6 from "../assets/Img6.png"
-import Img8 from "../assets/Img8.png"
-import ArrowLeft from "../assets/ArrowLeft.png"
-import ArrowRight from "../assets/ArrowRight.png"
-import HomeVideo1 from "./../assets/HomeVideo1.mp4"
-import HomeVideo2 from "./../assets/HomeVideo2.mp4"
+import { ArrowRightIcon } from "@heroicons/react/24/solid"; // Solid icons from Heroicons v1
+import Img6 from "../assets/Img6.png";
+import Img8 from "../assets/Img8.png";
+import ArrowLeft from "../assets/ArrowLeft.png";
+import ArrowRight from "../assets/ArrowRight.png";
+import HomeVideo1 from "./../assets/HomeVideo1.mp4";
+import HomeVideo2 from "./../assets/HomeVideo2.mp4";
 import HoverButton from "./HoverButton";
 const Home = () => {
-  
   const [currentBackground, setCurrentBackground] = useState(Img1); // Initial background image
 
   const handleHover = (image) => {
@@ -53,14 +52,22 @@ const Home = () => {
           muted
           className="absolute inset-0 top-0 w-screen h-full object-cover video-banner"
         >
-          <source className="" src={"https://tec-prod-bucket.s3.me-south-1.amazonaws.com/epublic/2kGlRV2Dpux0RDnBHIZ6Bshag0Z06p3DXqs7WqjK.mp4"} type="video/mp4" />
+          <source
+            className=""
+            src={
+              "https://tec-prod-bucket.s3.me-south-1.amazonaws.com/epublic/2kGlRV2Dpux0RDnBHIZ6Bshag0Z06p3DXqs7WqjK.mp4"
+            }
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
 
         <div className="relative z-10">
           <Navbar />
           <div className=" px-8 py-28">
-            <div className=" lg:text-2xl sm:text-base font-barlow">WELCOME TO ELITE GROUP HOLDINGS</div>
+            <div className=" lg:text-2xl sm:text-base font-barlow">
+              WELCOME TO ELITE GROUP HOLDINGS
+            </div>
             <div className=" lg:text-6xl sm:text-3xl  font-barlow text-3xl font-bold my-4">
               DRIVING EXCELLENCE <br />
               BUILDING FEATURES
@@ -68,53 +75,46 @@ const Home = () => {
             <HoverButton />
 
             <div className="flex gap-8 mt-40 w-full">
-              <div >
+              <div>
                 <div className=" pb-1 text-white ">
                   <div>Our Company</div>
                   <div className="border-b border-x-woodsmoke-400 p-1 px-20 "></div>
-
                 </div>
               </div>
               <div className="flex hidden md:flex">
                 <div className=" pb-1 text-white ">
                   <div>Automotive</div>
                   <div className="border-b border-white p-1 px-20 "></div>
-
                 </div>
               </div>
               <div className="flex hidden md:flex">
                 <div className=" pb-1 text-white ">
                   <div>Investments</div>
                   <div className="border-b border-white p-1 px-20 "></div>
-
                 </div>
               </div>
               <div className="flex hidden md:flex">
                 <div className=" pb-1 text-white ">
                   <div>Real-Estate</div>
                   <div className="border-b border-white p-1 px-20 "></div>
-
                 </div>
               </div>
               <div className="flex hidden md:flex">
                 <div className=" pb-1 text-white ">
                   <div>Healthcare</div>
                   <div className="border-b border-white p-1 px-20 "></div>
-
                 </div>
               </div>
               <div className=" flex hidden md:flex">
                 <div className=" pb-1 text-white ">
                   <div>Education</div>
                   <div className="border-b border-white p-1 px-20 "></div>
-
                 </div>
               </div>
               <div className=" flex hidden md:flex">
                 <div className=" pb-1 text-white ">
                   <div>Ecommerce</div>
                   <div className="border-b border-white p-1 px-20 "></div>
-
                 </div>
               </div>
             </div>
@@ -131,7 +131,9 @@ const Home = () => {
           </div>
           <div className="lg:w-1/2 ml-2 mt-4 lg:mt-6 lg:ml-4 ">
             <div className="mt-4">
-              <div className="font-extrabold text-3xl lg:text-5xl mb-2">ABOUT US</div>
+              <div className="font-extrabold text-3xl lg:text-5xl mb-2">
+                ABOUT US
+              </div>
               <div>
                 <div className="mb-1">
                   Elite Group Holding Ltd, is more than just a group holding
@@ -139,20 +141,19 @@ const Home = () => {
                   tomorrow’s possibilities.
                 </div>
                 <br />
-                We believe in the power of purpose-driven business. Our commitment
-                revolves around enhancing the quality of life within the
-                communities we serve and continuously seeking new avenues for
-                fostering growth.
+                We believe in the power of purpose-driven business. Our
+                commitment revolves around enhancing the quality of life within
+                the communities we serve and continuously seeking new avenues
+                for fostering growth.
               </div>
-
             </div>
             <button className="my-4 p-3 p-4 py-3 py-4 hidden md:flex flex bg-black border text-white rounded-full items-center px-16">
               <div className="text-lg">Read More</div>
-              <div className="hidden md:flex mt-1"><ArrowRightIcon className=" w-6 h-6" /></div>
-
+              <div className="hidden md:flex mt-1">
+                <ArrowRightIcon className=" w-6 h-6" />
+              </div>
             </button>
           </div>
-
         </div>
 
         <div className="ml-4 mt-4 md:hidden">
@@ -171,11 +172,7 @@ const Home = () => {
                 REAL ESTATE
               </div>
             </div>
-            <div className="flex gap-2 mb-3">
-
-
-
-            </div>
+            <div className="flex gap-2 mb-3"></div>
             <div className="flex gap-1 mb-3">
               <div className=" text-black p-1  border text-xs px-4 border-black rounded-full">
                 EDUCATION
@@ -183,7 +180,6 @@ const Home = () => {
               <div className=" text-black  border p-1   text-xs px-4 border-black rounded-full">
                 E-COMMERCE
               </div>
-
             </div>
           </div>
         </div>
@@ -195,16 +191,23 @@ const Home = () => {
                 Lamborghini Abu Dhabi and Dubai
               </div>
               <div className="text-base mx-12">
-                Ultimate Motors upholds its dedication to<br />
+                Ultimate Motors upholds its dedication to
+                <br />
                 delivering unrivaled excellence in <br />
                 customer experience and top-tier <br />
                 automotive services.
               </div>
-
             </div>
             <div className="flex justify-between mt-72 mx-12 ">
-              <div><img className="border border-white p-1 px-2" src={ArrowLeft} /></div>
-              <div><img className="border border-white p-1 px-2" src={ArrowRight} /></div>
+              <div>
+                <img className="border border-white p-1 px-2" src={ArrowLeft} />
+              </div>
+              <div>
+                <img
+                  className="border border-white p-1 px-2"
+                  src={ArrowRight}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -220,35 +223,46 @@ const Home = () => {
 
             <div className="relative z-10 h-full flex flex-col justify-end">
               <div className="flex  w-full h-full justify-between">
-
                 <div className="flex hidden md:flex  border-r border-white">
                   <div className="pb-1 text-white items-end mt-56">
-                    <div className=" mt-80 text-xl text-center mr-8 px-4">INVESTMENTS</div>
+                    <div className=" mt-80 text-xl text-center mr-8 px-4">
+                      INVESTMENTS
+                    </div>
                   </div>
                 </div>
                 <div className="flex hidden md:flex  border-r border-white">
                   <div className="pb-1 text-white items-end mt-56">
-                    <div className=" mt-80 text-xl text-center mr-8 px-4 ">INVESTMENTS</div>
+                    <div className=" mt-80 text-xl text-center mr-8 px-4 ">
+                      INVESTMENTS
+                    </div>
                   </div>
                 </div>
                 <div className="flex hidden md:flex  border-r border-white">
                   <div className="pb-1 text-white  mt-56">
-                    <div className=" mt-80 text-xl text-center mr-8 px-4">REAL ESTATE</div>
+                    <div className=" mt-80 text-xl text-center mr-8 px-4">
+                      REAL ESTATE
+                    </div>
                   </div>
                 </div>
                 <div className="flex hidden md:flex  border-r border-white">
                   <div className="pb-1 text-white mt-56">
-                    <div className=" mt-80 text-xl text-center mr-8 px-4">HEALTHCARE</div>
+                    <div className=" mt-80 text-xl text-center mr-8 px-4">
+                      HEALTHCARE
+                    </div>
                   </div>
                 </div>
                 <div className="flex hidden md:flex  border-r border-white">
                   <div className="pb-1 text-white mt-56">
-                    <div className=" mt-80 text-xl text-center mr-8 px-4">EDUCATION</div>
+                    <div className=" mt-80 text-xl text-center mr-8 px-4">
+                      EDUCATION
+                    </div>
                   </div>
                 </div>
                 <div className="flex hidden md:flex border-r border-white">
                   <div className="pb-1 text-white mt-56">
-                    <div className=" mt-80 text-xl text-center mr-8 px-4">ECOMMERCE</div>
+                    <div className=" mt-80 text-xl text-center mr-8 px-4">
+                      ECOMMERCE
+                    </div>
                   </div>
                 </div>
               </div>
@@ -260,34 +274,31 @@ const Home = () => {
           <div className=" m-4 lg:m-8 mr-8 lg:mr-0">
             <div className="mr-2 bg-blackhaze-500">
               <div className=" flex flex-col md:flex-row items-center  mt-3 justify-between">
-                <div className="font-extrabold text-3xl ml-0 lg:ml-8 text-start"> HIGHLIGHTS</div>
+                <div className="font-extrabold text-3xl ml-0 lg:ml-8 text-start">
+                  {" "}
+                  HIGHLIGHTS
+                </div>
                 <div className="ml-4 lg:ml-2 flex  hidden text-xs text-nowrap">
-                  We are pragmatic in our approach to design  and
-                  handle each project in accordance with its particular
-
-                  set of   requirements and imperatives. When working in
-                  conservation
-                  areas or on listed buildings we aim to
-                  respect and retain the best of the historic elements
-
-                  and to supplement these with contemporary interventions s
-                  wherever appropriate.
+                  We are pragmatic in our approach to design and handle each
+                  project in accordance with its particular set of requirements
+                  and imperatives. When working in conservation areas or on
+                  listed buildings we aim to respect and retain the best of the
+                  historic elements and to supplement these with contemporary
+                  interventions s wherever appropriate.
                 </div>
                 <div className="text-xs">
-                  We are pragmatic in our approach to design and
-                  handle each project in accordance with  its particular
-
-                  set of requirements<br /> and imperatives. When working in
-
-                  conservation  areas or on<br /> listed buildings we aim to
-
-                  respect  retain the best of the<br /> historic elements
-
-                  and   to supplement these with contemporary<br /> interventions
-                  wherever appropriate.
+                  We are pragmatic in our approach to design and handle each
+                  project in accordance with its particular set of requirements
+                  <br /> and imperatives. When working in conservation areas or
+                  on
+                  <br /> listed buildings we aim to respect retain the best of
+                  the
+                  <br /> historic elements and to supplement these with
+                  contemporary
+                  <br /> interventions wherever appropriate.
                 </div>
-              </div> <div className="ml-4 lg:ml-2 flex mt-12  ">
-
+              </div>{" "}
+              <div className="ml-4 lg:ml-2 flex mt-12  ">
                 <div className=" flex hidden md:flex">
                   {" "}
                   Energy efficiency and sustainability issues are given <br />
@@ -350,9 +361,7 @@ const Home = () => {
                       <div className=" text-5xl">20+</div>
                       <div className="">Offices / Showrooms</div>
                     </div>
-                    <div>
-
-                    </div>
+                    <div></div>
                   </div>
                   <div className="p-2 py-14 border-r border-r-black"> </div>
                 </div>
@@ -379,9 +388,7 @@ const Home = () => {
                   <div className="text-nowrap text-xs">Offices / Showrooms</div>
                 </div>
               </div>
-
             </div>
-
           </div>
           <div className="mt-10 md:hidden">
             <div className="relative inline-block">
@@ -394,13 +401,17 @@ const Home = () => {
                 <div className="absolute mb-20 text-white m-8 mr-12 ">
                   <div className="font-bold text-5xl ">CAREERS</div>
                   <div className="text-xl mt-3">Join us in enriching lives</div>
-                  <div className="text-sm mt-3 text-chicago-400">Integrity, Commitment and Innovation form the foundation of our values, and if your passion lies in empowering lives and want to be of service in creating a better world, we are looking for you. Join us to be a part of a transformational journey.</div>
+                  <div className="text-sm mt-3 text-chicago-400">
+                    Integrity, Commitment and Innovation form the foundation of
+                    our values, and if your passion lies in empowering lives and
+                    want to be of service in creating a better world, we are
+                    looking for you. Join us to be a part of a transformational
+                    journey.
+                  </div>
                   <div></div>
                 </div>
               </div>
-
             </div>
-
           </div>
 
           <div className="hidden md:flex flex flex-col">
@@ -415,36 +426,46 @@ const Home = () => {
 
               <div className="relative z-10 h-full flex flex-col justify-end">
                 <div className="flex  w-full h-full justify-between">
-
                   <div className="flex hidden md:flex  border-r border-white">
                     <div className="pb-1 text-white items-end mt-56">
-                      <div className=" mt-80 text-xl text-center mr-8 px-4">LAMBORGHINI
+                      <div className=" mt-80 text-xl text-center mr-8 px-4">
+                        LAMBORGHINI
                       </div>
                     </div>
                   </div>
                   <div className="flex hidden md:flex  border-r border-white">
                     <div className="pb-1 text-white items-end mt-56">
-                      <div className=" mt-80 text-xl text-center mr-8 px-4 ">ZENVO AUTOMOBILE</div>
+                      <div className=" mt-80 text-xl text-center mr-8 px-4 ">
+                        ZENVO AUTOMOBILE
+                      </div>
                     </div>
                   </div>
                   <div className="flex hidden md:flex  border-r border-white">
                     <div className="pb-1 text-white  mt-56">
-                      <div className=" mt-80 text-xl text-center mr-8 px-10">JETOUR</div>
+                      <div className=" mt-80 text-xl text-center mr-8 px-10">
+                        JETOUR
+                      </div>
                     </div>
                   </div>
                   <div className="flex hidden md:flex  border-r border-white">
                     <div className="pb-1 text-white mt-56">
-                      <div className=" mt-80 text-xl text-center mr-8 px-4">THE ELITE CARS</div>
+                      <div className=" mt-80 text-xl text-center mr-8 px-4">
+                        THE ELITE CARS
+                      </div>
                     </div>
                   </div>
                   <div className="flex hidden md:flex  border-r border-white">
                     <div className="pb-1 text-white mt-56">
-                      <div className=" mt-80 text-xl text-center mr-8 px-4">SUN CITY MOTORS</div>
+                      <div className=" mt-80 text-xl text-center mr-8 px-4">
+                        SUN CITY MOTORS
+                      </div>
                     </div>
                   </div>
                   <div className="flex hidden md:flex border-r border-white">
                     <div className="pb-1 text-white mt-56">
-                      <div className=" mt-80 text-xl text-center mr-8 px-4">ECOMMERCE</div>
+                      <div className=" mt-80 text-xl text-center mr-8 px-4">
+                        ECOMMERCE
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -453,12 +474,16 @@ const Home = () => {
           </div>
           <div className=" m-6 md:hidden">
             <div className="flex justify-between">
-              <div className="font-extrabold text-base text-nowrap  ">   NEWS</div>
+              <div className="font-extrabold text-base text-nowrap  ">
+                {" "}
+                NEWS
+              </div>
               <div className="text-center text-sm ">SWIPE</div>
-
-            </div>            <div className="flex justify-between">
-              <div className="font-extrabold text-2xl text-nowrap  my-4">LAMBORGHINI WORLD</div>
-
+            </div>{" "}
+            <div className="flex justify-between">
+              <div className="font-extrabold text-2xl text-nowrap  my-4">
+                LAMBORGHINI WORLD
+              </div>
             </div>
             <div>
               <img src={LamborghiniMob} />
@@ -472,35 +497,47 @@ const Home = () => {
               </div>
 
               <div>LAMBORGHINI URUS SE DEBUTS IN GERMANY</div>
-              <div> <button className=" p-1 border-chicago-400 mt-2 border text-chicago-400 rounded-full px-10 ">
-                READ MORE
-              </button></div>
+              <div>
+                {" "}
+                <button className=" p-1 border-chicago-400 mt-2 border text-chicago-400 rounded-full px-10 ">
+                  READ MORE
+                </button>
+              </div>
             </div>
-
           </div>
           <div className="mx-28 my-32 hidden md:block ">
-          <div className="mx-28 my-32 hidden md:block relative">
-      <div>
-        <div className="font-bold text-5xl my-4">LAMBORGHINI WORLD</div>
-        <div className="relative">
-          <img src={Lamborghini} alt="Lamborghini" className="w-full h-auto" />
-          <div className="absolute inset-0 flex flex-col justify-end p-4">
-            <div className="text-masala-300 font-bold">
-              May 20, 2024, Dubai, UAE
-            </div>
-            <div className="flex justify-between items-center">
-              <div className="font-bold text-2xl my-3 text-white">
-                LAMBORGHINI URUS SE DEBUTS IN GERMANY
+            <div className="mx-28 my-32 hidden md:block relative">
+              <div>
+                <div className="font-bold text-5xl my-4">LAMBORGHINI WORLD</div>
+                <div className="relative">
+                  <img
+                    src={Lamborghini}
+                    alt="Lamborghini"
+                    className="w-full h-auto"
+                  />
+                  <div className="absolute inset-0 flex flex-col justify-end p-4">
+                    <div className="text-masala-300 font-bold">
+                      May 20, 2024, Dubai, UAE
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <div className="font-bold text-2xl my-3 text-white">
+                        LAMBORGHINI URUS SE DEBUTS IN GERMANY
+                      </div>
+                      <a
+                        href="/path-to-detailed-article"
+                        className="text-white underline"
+                      >
+                        READ MORE
+                      </a>{" "}
+                      {/* Update the href attribute */}
+                    </div>
+                    <div className="text-white">
+                      LAMBORGHINI URUS SE DEBUTS IN GERMANY
+                    </div>
+                  </div>
+                </div>
               </div>
-              <a href="/path-to-detailed-article" className="text-white underline">READ MORE</a> {/* Update the href attribute */}
             </div>
-            <div className="text-white">
-              LAMBORGHINI URUS SE DEBUTS IN GERMANY
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
             <div className="mt-16 flex gap-3 justify-between">
               <div>
                 <div>
@@ -530,8 +567,8 @@ const Home = () => {
                   27 January 2024, Dubai, UAE
                 </div>
                 <div className="font-bold text-2xl ">
-                  THE ALL NEW JETOUR
-                  T2 DEBUTS IN THE UAE                </div>
+                  THE ALL NEW JETOUR T2 DEBUTS IN THE UAE{" "}
+                </div>
 
                 <div className="mt-6">
                   <button className="m-4 p-1 border-black border rounded-full px-10  ">
@@ -547,10 +584,9 @@ const Home = () => {
                   March 16, 2023, Dubai, UAE
                 </div>
                 <div className="font-bold text-2xl ">
-                  2023 JETOUR DASHING<br /> MAKES
-                  ITS DEBUT IN UAE <br />THROUGH
-
-                  THE ELITE CARS
+                  2023 JETOUR DASHING
+                  <br /> MAKES ITS DEBUT IN UAE <br />
+                  THROUGH THE ELITE CARS
                 </div>
                 <div className="">
                   <button className="m-4 p-1 border-black border rounded-full px-10  ">
@@ -563,11 +599,7 @@ const Home = () => {
           <div className="flex">
             <div className="flex flex-col md:hidden">
               <div className="relative inline-block">
-                <img
-                  src={ImgMob4}
-                  alt="Footer Image"
-                  className="w-screen"
-                />
+                <img src={ImgMob4} alt="Footer Image" className="w-screen" />
                 <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
                 <div>
                   <div className="absolute top-0 left-0 w-full h-full text-white m-8  mr-36 mb-24">
@@ -577,13 +609,15 @@ const Home = () => {
                         OUR BRANDS
                       </div>
                       <div className="text-nobel-400 mt-8 mr-24 ">
-                        Our portfolio showcases a diverse range of projects in<br />
-                        different scales and styles, reflecting our commitment<br />
-                        to
-                        excellence and innovation in design. With a team
-                        of <br /> experienced architects, designers and engineers,<br />
-                        ELITE GROUP
-                        provides end-to-end solutions that <br /> change people's life.
+                        Our portfolio showcases a diverse range of projects in
+                        <br />
+                        different scales and styles, reflecting our commitment
+                        <br />
+                        to excellence and innovation in design. With a team of{" "}
+                        <br /> experienced architects, designers and engineers,
+                        <br />
+                        ELITE GROUP provides end-to-end solutions that <br />{" "}
+                        change people's life.
                       </div>
                       <div className="mt-12 mr-96 ">
                         <div className="flex justify-between ">
@@ -593,20 +627,13 @@ const Home = () => {
                           <div>
                             <img src={Logo3} />
                           </div>
-                          <div>
-                          </div>
-                          <div>
-                          </div>
+                          <div></div>
+                          <div></div>
                         </div>
-
-
-
                       </div>
                     </div>
                   </div>
-
                 </div>
-
               </div>
               <div className="bg-woodsmoke-500    ">
                 <div className="p-5">
@@ -618,21 +645,24 @@ const Home = () => {
                       <div className="text-white text-3xl">ABOUT US</div>
                       <div className="text-white text-sm mt-6 text-nowrap ">
                         We are pragmatic in our approach to design and handle
-                        each<br /> project in accordance with its particular
-                        set of
-                        requirements<br /> and imperatives. When working in
-                        conservation areas  or on<br /> listed buildings we
-                        aim to respect
-                        and retain the best of the<br /> historic elements
-                        and to
-                        supplement these with contemporary<br />
-                        interventions
-                        wherever appropriate.
+                        each
+                        <br /> project in accordance with its particular set of
+                        requirements
+                        <br /> and imperatives. When working in conservation
+                        areas or on
+                        <br /> listed buildings we aim to respect and retain the
+                        best of the
+                        <br /> historic elements and to supplement these with
+                        contemporary
+                        <br />
+                        interventions wherever appropriate.
                       </div>
                     </div>
                     <div className="flex justify-between mt-4">
                       <div className="text-masala-300">
-                        <div className="text-white font-semibold" >Navigation</div>
+                        <div className="text-white font-semibold">
+                          Navigation
+                        </div>
                         <div className="mt-3">Home </div>
 
                         <div>About Group</div>
@@ -642,7 +672,9 @@ const Home = () => {
                         <div>Contact Us</div>
                       </div>
                       <div className="text-masala-300">
-                        <div className="text-white font-semibold">Our Sectors</div>
+                        <div className="text-white font-semibold">
+                          Our Sectors
+                        </div>
                         <div className="mt-3">Automotive</div>
 
                         <div>Investments</div>
@@ -655,9 +687,8 @@ const Home = () => {
                     <div className="text-masala-300 mt-8">
                       <div className="text-white mt-6">Subscribe</div>
                       <div className="my-6 text-sm">
-                        Subscribe to our Newsletter to be up to date
-                        with the <br /> latest automotive news and our  amazing
-                        deals
+                        Subscribe to our Newsletter to be up to date with the{" "}
+                        <br /> latest automotive news and our amazing deals
                       </div>
 
                       <div>
@@ -700,16 +731,23 @@ const Home = () => {
                         </div>
                       </div>
                     </div>
-
                   </div>
                 </div>
                 <div className="w-full border-t border-white"></div>
                 <div className="p-5 text-chicago-500 text-sm">
-                  <div className="text-nowrap my-4"> Copyright © 2024 | ALL RIGHTS RESERVED | The Elite Cars LLC</div>
-                  <div><span className="text-white font-bold text-nowrap text-xs">Disclaimer:</span> The Elite Cars is not endorsed by, directly affiliated with, maintained or sponsored by any car manufacturer.</div>
+                  <div className="text-nowrap my-4">
+                    {" "}
+                    Copyright © 2024 | ALL RIGHTS RESERVED | The Elite Cars LLC
+                  </div>
+                  <div>
+                    <span className="text-white font-bold text-nowrap text-xs">
+                      Disclaimer:
+                    </span>{" "}
+                    The Elite Cars is not endorsed by, directly affiliated with,
+                    maintained or sponsored by any car manufacturer.
+                  </div>
                 </div>
               </div>
-
             </div>
             <div className="bg-woodsmoke-500 hidden md:block ">
               <div className="relative inline-block">
@@ -729,11 +767,10 @@ const Home = () => {
                       <div className="text-nobel-500 w-[700px] ">
                         Our portfolio showcases a diverse range of projects in
                         different scales and styles, reflecting our commitment
-                        to
-                        excellence and innovation in design. With a team
-                        of experienced architects, designers and engineers,
-                        ELITE GROUP
-                        provides end-to-end solutions that change people's life.
+                        to excellence and innovation in design. With a team of
+                        experienced architects, designers and engineers, ELITE
+                        GROUP provides end-to-end solutions that change people's
+                        life.
                       </div>
                       <div className="mt-12 w-[700px]   ">
                         <div className="flex justify-between ">
@@ -802,29 +839,26 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-
               </div>
-              <div className="bg-woodsmoke-500 p-5  h-screen  ">
-                <div className="justify-center items-center flex mb-14">
+              <div className="bg-woodsmoke-500 p-5   ">
+                <div className="justify-center items-center flex ">
                   <img src={Logo} alt="Logo" />
-                </div>npm run delivering
+                </div>
                 <div className="flex justify-between">
                   <div>
                     <div className="text-masala-300 text-3xl">ABOUT US</div>
                     <div className="text-masala-300 mt-6">
                       We are pragmatic in our approach to design and handle
-                      <br /> each project in accordance with its particular
-                      set of
+                      <br /> each project in accordance with its particular set
+                      of
                       <br /> requirements and imperatives. When working in
-                      <br /> conservation areas or on listed buildings we
-                      aim to respect
-                      <br /> and retain the best of the historic elements
-                      and to
-                      <br /> supplement these with contemporary
-                      interventions <br />
+                      <br /> conservation areas or on listed buildings we aim to
+                      respect
+                      <br /> and retain the best of the historic elements and to
+                      <br /> supplement these with contemporary interventions{" "}
+                      <br />
                       wherever appropriate.
                     </div>
-
                   </div>
                   <div className="text-masala-300">
                     <div>NAVIGATION</div>
@@ -838,22 +872,19 @@ const Home = () => {
                   </div>
                   <div className="text-masala-300">
                     <div>Group of Companies</div>
-                    <div className="mt-3">
-                      Automotive
-
-                    </div>
+                    <div className="mt-3">Automotive</div>
 
                     <div>Investments</div>
                     <div>Group Companies</div>
                     <div>Real Estate </div>
                     <div> Healthcare</div>
-                    <div>  Education Ecommerce</div>
+                    <div> Education Ecommerce</div>
                   </div>
                   <div className="text-masala-300">
                     <div>SUBSCRIBE</div>
                     <div className="mt-3">
-                      Subscribe to our Newsletter to be up to date <br /> with the latest automotive news and our <br /> amazing deals
-
+                      Subscribe to our Newsletter to be up to date <br /> with
+                      the latest automotive news and our <br /> amazing deals
                     </div>
 
                     <div>
@@ -879,25 +910,41 @@ const Home = () => {
                       </form>
                     </div>
                     <div className="flex mt-4 ml-2 gap-5">
-                      <div><img src={FB} /></div>
-                      <div><img src={Lin} /></div>
-                      <div><img src={IG} /></div>
-                      <div><img src={Yt} /></div>
-                      <div><img src={Twtr} /></div>
+                      <div>
+                        <img src={FB} />
+                      </div>
+                      <div>
+                        <img src={Lin} />
+                      </div>
+                      <div>
+                        <img src={IG} />
+                      </div>
+                      <div>
+                        <img src={Yt} />
+                      </div>
+                      <div>
+                        <img src={Twtr} />
+                      </div>
                     </div>
                   </div>
-
-
                 </div>
               </div>
 
               <div className="w-full border-t border-white"></div>
               <div className="p-5 text-chicago-500 text-sm">
-                <div className="text-nowrap my-4"> Copyright © 2024 | ALL RIGHTS RESERVED | The Elite Cars LLC</div>
-                <div><span className="text-white font-bold text-nowrap text-xs">Disclaimer:</span> The Elite Cars is not endorsed by, directly affiliated with, maintained or sponsored by any car manufacturer.</div>
+                <div className="text-nowrap my-4">
+                  {" "}
+                  Copyright © 2024 | ALL RIGHTS RESERVED | The Elite Cars LLC
+                </div>
+                <div>
+                  <span className="text-white font-bold text-nowrap text-xs">
+                    Disclaimer:
+                  </span>{" "}
+                  The Elite Cars is not endorsed by, directly affiliated with,
+                  maintained or sponsored by any car manufacturer.
+                </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
