@@ -29,7 +29,7 @@ import Lin from '../assets/Lin.png'
 import Twtr from '../assets/Twtr.png'
 import Yt from '../assets/Yt.png'
 import { ArrowRightEndOnRectangleIcon } from "@heroicons/react/24/outline";
-import { ArrowRightIcon } from '@heroicons/react/solid'; // Solid icons from Heroicons v1
+import { ArrowRightIcon } from '@heroicons/react/24/solid'; // Solid icons from Heroicons v1
 import Img6 from "../assets/Img6.png"
 import Img8 from "../assets/Img8.png"
 import ArrowLeft from "../assets/ArrowLeft.png"

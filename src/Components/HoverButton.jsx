@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
-import { ArrowRightIcon } from '@heroicons/react/solid';
+import { ArrowRightIcon } from '@heroicons/react/24/solid';
 
 const HoverButton = () => {
   const buttonRef = useRef(null);
