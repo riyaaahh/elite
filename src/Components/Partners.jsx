@@ -16,6 +16,23 @@ const Partners = () => {
     const headingRef = useRef(null); // Ref for the heading element
 
     useEffect(() => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animatePartners();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      observer.observe(headingRef.current);
+
+      return () => {
+        observer.disconnect();
+      };
+    }, []);
+
+    const animatePartners = () => {
       const timeline = gsap.timeline();
   
       // Animation for heading
@@ -24,9 +41,10 @@ const Partners = () => {
         { x: '-100%', opacity: 0 },
         { x: '0%', opacity: 1, duration: 1, ease: 'power3.out' }
       );
-  
-    }, []); // Empty dependency array ensures useEffect runs only once
-  
+
+      // Additional animations can be added here as needed
+    };
+
     return (
       <div>
         <div className="flex hidden md:block">

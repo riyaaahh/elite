@@ -3,8 +3,36 @@ import gsap from 'gsap';
 
 const Highlights = () => {
   const counters = useRef([]);
-
+  const headingRef = useRef(null);
+  
   useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateHighlights();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(headingRef.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  const animateHighlights = () => {
+    const timeline = gsap.timeline();
+
+    // Animation for heading
+    timeline.fromTo(
+      headingRef.current,
+      { x: "-100%", opacity: 0 },
+      { x: "0%", opacity: 1, duration: 1, ease: "power3.out" }
+    );
+
+    // Animation for counters
     counters.current.forEach((counter) => {
       const targetNumber = parseInt(counter.getAttribute('data-target'), 10);
       gsap.to(counter, {
@@ -17,14 +45,16 @@ const Highlights = () => {
         }
       });
     });
-  }, []);
+  };
 
   return (
     <div>
       <div className="m-4 lg:m-8 mr-8 lg:mr-0 mx-6">
         <div className="mr-2 bg-blackhaze-500">
           <div className="flex flex-col md:flex-row items-center gap-4 mx-6 mt-3 justify-between">
-            <div className="font-extrabold text-4xl ml-0 lg:ml-8 text-start">HIGHLIGHTS</div>
+            <div className="font-extrabold text-4xl ml-0 lg:ml-8 text-start" ref={headingRef}>
+              HIGHLIGHTS
+            </div>
             <div className="gap-4 flex">
               <div className="text-base">
                 We are pragmatic in our approach to design and handle each project in accordance with its particular set of requirements and imperatives. When working in conservation areas or on listed buildings we aim to respect retain the best of the historic elements and to supplement these with contemporary interventions wherever appropriate.

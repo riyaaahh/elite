@@ -8,6 +8,23 @@ const AboutUs = () => {
   const aboutUsTitleRef = useRef(null);
 
   useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateAboutUs();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(aboutUsTitleRef.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  const animateAboutUs = () => {
     const timeline = gsap.timeline();
 
     // Animation for "ABOUT US" title
@@ -17,7 +34,8 @@ const AboutUs = () => {
       { y: '0%', opacity: 1, duration: 1, ease: 'power3.out' }
     );
 
-  }, []);
+    // Additional animations can be added here as needed
+  };
 
   return (
     <div className="flex flex-col-reverse lg:flex-row mx-4 lg:mx-0 lg:my-0">

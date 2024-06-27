@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import Img1 from "../assets/Img1.png";
 import Img2 from "../assets/Img2.png";
@@ -16,6 +16,23 @@ const Sectors = () => {
     const headingRef = useRef(null); // Ref for the heading element
 
     useEffect(() => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateSectors();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      observer.observe(headingRef.current);
+
+      return () => {
+        observer.disconnect();
+      };
+    }, []);
+
+    const animateSectors = () => {
       const timeline = gsap.timeline();
   
       // Animation for heading
@@ -25,8 +42,9 @@ const Sectors = () => {
         { x: '0%', opacity: 1, duration: 1, ease: 'power3.out' }
       );
   
-    }, []); // Empty dependency array ensures useEffect runs only once
-  
+      // Additional animations can be added here as needed
+    };
+
     return (
       <div>
         <div className="flex hidden md:block">
