@@ -7,6 +7,8 @@ import HoverButton from './Components/HoverButton';
 import SectorExplore from './Components/SectorExplore';
 import AboutUs from './Components/AboutUs';
 import Lamborghini from './Components/Lamborghini';
+import Partners from './Components/Partners';
+import Sectors from './Components/Sectors';
 
 
 
@@ -22,6 +24,9 @@ function App() {
             <Route path="/SectorExplore" element={<SectorExplore/>}/>
             <Route path="/AboutUs" element={<AboutUs/>}/>
             <Route path="/Lamborghini" element={<Lamborghini/>}/>
+
+            <Route path="/Partners" element={<Partners/>}/>
+            <Route path="/Sectors" element={<Sectors/>}/>
 
 
 

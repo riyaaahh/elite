@@ -38,7 +38,7 @@ const HoverButton = () => {
   return (
     <button
       ref={buttonRef}
-      className="my-4 flex py-3 border-white border gap-2 rounded-full items-center px-10 relative overflow-hidden"
+      className="my-4 flex py-3 border-white border gap-2 lg:mt-8 rounded-full items-center px-10 relative overflow-hidden"
     >
       <div ref={circleRef} className="bg-circle absolute rounded-full"></div>
       <div ref={textRef} className="text-base relative z-10">
