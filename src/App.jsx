@@ -1,43 +1,27 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css'
-import Home from './Components/Home'
-import Navbar from './Components/Navbar';
-import HoverButton from './Components/HoverButton';
-import SectorExplore from './Components/SectorExplore';
-import AboutUs from './Components/AboutUs';
-import Lamborghini from './Components/Lamborghini';
-import Partners from './Components/Partners';
-import Sectors from './Components/Sectors';
-import HoverButtontwo from './Components/HoverButtontwo';
-
-
+import './App.css';
+import Home from './Components/Home/Home'
+import ContactUs from './Components/ContactUs/ContactUs';
+import AboutUs from './Components/AboutUs/AboutUs';
+import GroupOfCompanies from './Components/GroupOfCompanies/GroupOfCompanies';
+import MediaCenter from './Components/MediaCenter/MediaCenter';
+import Careers from './Components/Careers/Careers';
 
 
 function App() {
 
   return (
-        <Router>
-          <Routes>
-          <Route path="/Navbar" element={<Navbar />} />
-
-            <Route path="/" element={<Home />} />
-            <Route path="/HoverButton" element={<HoverButton/>}/>
-            <Route path="/SectorExplore" element={<SectorExplore/>}/>
-            <Route path="/AboutUs" element={<AboutUs/>}/>
-            <Route path="/Lamborghini" element={<Lamborghini/>}/>
-
-            <Route path="/Partners" element={<Partners/>}/>
-            <Route path="/Sectors" element={<Sectors/>}/>
-            <Route path="/HoverButtontwo" element={<HoverButtontwo/>}/>
-
-
-
-
-            
-
-          </Routes>
-        </Router>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about-group" element={<AboutUs />} />
+        <Route path="group-companies" element={<GroupOfCompanies />} />
+        <Route path="careers" element={<Careers />} />
+        <Route path="media-center" element={<MediaCenter />} />
+        <Route path="contact-us" element={<ContactUs />} />
+      </Routes>
+    </Router>
   )
 }
 

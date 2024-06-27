@@ -1,38 +1,39 @@
-import React from 'react';
-import FB from '../assets/FB.png'
-import IG from '../assets/IG.png'
-import Lin from '../assets/Lin.png'
-import Twtr from '../assets/Twtr.png'
-import Yt from '../assets/Yt.png'
+import React, { useState } from 'react';
 import Logo from '../assets/Logo.png'
-import { Bars4Icon } from '@heroicons/react/24/solid';
+import { Squash as Hamburger } from 'hamburger-react';
+import SocialLinks from './SocialLinks';
 
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
-    <div className='bg-transparent p-2 px-8 font-barlow sticky top-0'>
-      <div className='flex justify-between items-center'>
-        <div className='flex gap-6  hidden md:flex items-center'>
-          <div className=''><img src={FB} alt="Facebook" /></div>
-          <div className=''><img src={Lin} alt="LinkedIn" /></div>
-          <div className='mt-3'><img src={IG} alt="Instagram" /></div>
-
-          <div className=''><img src={Yt} alt="Youtube" /></div>
-          <div className=''><img src={Twtr} alt="Twitter" /></div>
-
-        </div>
-
-
-
-        <div><img src={Logo} className=' mr-0 md:mr-8' /></div>
-        <div className='flex gap-8  '>
-          <div className='text-white text-lg hidden md:flex'>CONTACT</div>
-          <div><Bars4Icon className='w-8 h-8 text-white' /></div>
-
+    <>
+      <div className='fixed z-50 w-screen'>
+        <div className="flex justify-between px-[2.5%] py-4 bg-[linear-gradient(rgba(15,15,15,0.7),rgba(0,0,0,0))]">
+          <SocialLinks className='gap-2 hidden md:flex items-center' />
+          <img src={Logo} className=' mr-0 md:mr-8' />
+          <div className='flex items-center gap-8'>
+            <a href='/contact-us' className='text-white text-lg hidden md:flex'>CONTACT</a>
+            <Hamburger toggled={showMenu} toggle={setShowMenu} color="white" />
+          </div>
         </div>
       </div>
+      <div className={`menu w-screen h-screen fixed z-40 bg-[#b5aba1] transition-all duration-1000 ease-in-out ${showMenu ? 'bottom-0' : 'bottom-full'}`}>
+        <div className='relative h-screen w-screen'>
+          <div className="grid content-center h-full px-[2.5%] gap-3">
+            <a href='/' className='text-white text-3xl'>HOME</a>
+            <a href='/about-group' className='text-white text-3xl'>ABOUT GROUP</a>
+            <a href='/group-companies' className='text-white text-3xl'>GROUP COMPANIES</a>
+            <a href='/careers' className='text-white text-3xl'>CAREERS</a>
+            <a href='/media-center' className='text-white text-3xl'>MEDIA CENTER</a>
+            <a href='/contact-us' className='text-white text-3xl'>CONTACT US</a>
+          </div>
 
-    </div>
+          <SocialLinks className='absolute z-30 bottom-[3%] right-[3%] gap-2 md:hidden flex items-center' />
+        </div>
+      </div>
+    </>
   );
 }
 
