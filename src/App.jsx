@@ -9,6 +9,8 @@ import AboutUs from './Components/AboutUs';
 import Lamborghini from './Components/Lamborghini';
 import Partners from './Components/Partners';
 import Sectors from './Components/Sectors';
+import HoverButtontwo from './Components/HoverButtontwo';
+
 
 
 
@@ -27,6 +29,8 @@ function App() {
 
             <Route path="/Partners" element={<Partners/>}/>
             <Route path="/Sectors" element={<Sectors/>}/>
+            <Route path="/HoverButtontwo" element={<HoverButtontwo/>}/>
+
 
 
 
