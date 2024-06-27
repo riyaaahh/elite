@@ -22,7 +22,7 @@ const Home = () => {
   const videoRef = useRef(null);
   const [progress, setProgress] = useState(0);
 
-  
+
   const videoUrls = [
     video2,
     video3,
@@ -81,11 +81,11 @@ const Home = () => {
             className="absolute inset-0 top-0 w-screen h-full object-cover video-banner"
             onEnded={handleVideoEnd}
             onLoadedMetadata={() => {
-    videoRef.current.play().catch((error) => {
-      console.error('Autoplay failed:', error);
-      // You can handle the error or prompt the user to interact
-    });
-  }}
+              videoRef.current.play().catch((error) => {
+                console.error('Autoplay failed:', error);
+                // You can handle the error or prompt the user to interact
+              });
+            }}
           >
             <source
               className=""
